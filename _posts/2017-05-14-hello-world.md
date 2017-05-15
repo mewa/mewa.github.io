@@ -2,6 +2,7 @@
 layout: post
 title: The somewhat lengthy "Hello world" post
 categories: [Hello world, x86 assembly]
+comments: true
 ---
 It is a long honored tradition for IT texts to start with these famous words. Over the years, the languages have evolved, so did the paradigms, by which we write our code -- yet almost every book or tutorial, on any language, still begins with this simple piece of *software*.
 
