@@ -4,7 +4,7 @@ title: The somewhat lengthy "Hello world" post
 categories: [Hello world, x86 assembly]
 comments: true
 ---
-It is a long honored tradition for IT texts to start with these famous words. Over the years, the languages have evolved, so did the paradigms, by which we write our code -- yet almost every book or tutorial, on any language, still begins with this simple piece of *software*.
+It is a long honored tradition for IT texts to start with these famous words. Over the years, the languages have evolved, so did the paradigms by which we write our code -- yet almost every book or tutorial, on any language, still begins with this simple piece of *software*.
 
 Since I don't want to stir things up and be some kind of a rebel this blog shall not be different -- in this particular case. 
 <!--more-->
@@ -45,7 +45,7 @@ _start:
 {% endhighlight %}
 
 I have this magic `make` command that will create a binary out of this, so we can check if it really is a "Hello world".
-{% highlight bash %}
+{% highlight sh %}
 mewa-osx$ make
 nasm -fmacho32 hello.asm
 ld -e _start hello.o
@@ -55,6 +55,8 @@ Hello world!
 Unbelievable! Did you really think it was going to be something else? ;)
 
 Now that we know it really is a "Hello world" let's analyse what is happening **exactly**.
+
+### The bits
 
 As you may have noticed, the example above is written in assembly language - in particular, x86 assembly, since I have an x86-64 Intel CPU. The assembly language is actually **dead simple** -- it consists of instructions which are just mnemonics for respective machine code, and that machine code does a thing and just that. The barrier that often makes people think it is hard is, that you have to be constantly aware of your *environment* - system, hardware, etc. And yeah, it is verbose - it is even more verbose than **Java**. :O
 
@@ -87,7 +89,7 @@ We're pushing individual words onto the stack, which will together form a charac
 
 So it's a hexadecimal number, where every 2 digits encode a byte.
 
-{% highlight bash %}
+{% highlight sh %}
 mewa-osx$ echo $(cat hello.asm | grep "push 0x" | tr -d "push0x" | tr -d '\n\t ')
 0a21646c726f7726f6c6c6548
 {% endhighlight %}
@@ -95,7 +97,7 @@ mewa-osx$ echo $(cat hello.asm | grep "push 0x" | tr -d "push0x" | tr -d '\n\t '
 Let's decode it to something human-readable -- it's a string after all. You can use any language -- or even a piece of paper and a pencil -- but I'm gonna use Haskell, because why not. Plus I like Haskell.
 
 The following script takes our hex-string and decodes it to bytes that this string represents. 
-{% highlight bash %}
+{% highlight sh %}
 mewa-osx$ ghci
 GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
 {% endhighlight %}
@@ -140,7 +142,7 @@ Now that we have our arguments on the stack, let's (finally) write our greeting.
 mov eax, 4
 {% endhighlight %}
 
-While the most common syscalls, such as the `write` syscall, usually have the same syscall numbers, you should always consult your system's headers or manuals to select the appropriate number, since even when different OSes expose the same functions (e.g. under the same "names"), they often have a different syscall number assigned and thus the code would break.
+While the most common syscalls, such as the `write` syscall, usually have the same syscall numbers, you should always consult your system's headers or manuals to select the appropriate number, since even when different OSes expose the same functions (i.e. under the same "names"), they often have a different syscall number assigned and thus the code would break.
 
 Anyway, we're ready to write stuff to the standard output, yay!
 
@@ -166,10 +168,10 @@ While I tried to explain everything at hand some things may still not be clear i
 
 It's true that the assembly is not the most common language, but it is pretty interesting, nevertheless. And powerful.
 
-In the upcoming posts we'll see however that sometimes it comes in very handy.
+In the [upcoming posts]({{ "/articles/2017-07/polyglot-assembly-101" | absolute_url }}) we'll see however that sometimes it comes in very handy.
 
 Last but not least, since this is my very first blog post -- please give me your feedback, whether you liked it -- or not (and why); comment, share, etc. etc.!
-~~~
-./a.out
+{% highlight sh %}
+mewa-osx$ ./a.out
 Hello world!
-~~~
+{% endhighlight %}
