@@ -33,7 +33,7 @@ That's the whole idea behind *polyglot machine code*: write once -- run everywhe
 
 But before we continue with writing our little polyglot, let's examine whether we need it at all.
 
-### The code
+### The Code
 
 For our tests we're going to use the following program, which just reads machine code from a file given as its argument and executes it.
 
