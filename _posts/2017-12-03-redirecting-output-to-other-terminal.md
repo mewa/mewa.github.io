@@ -33,8 +33,6 @@ because this functionality isn't even the first thing mentioned in `man`. The fi
 The exec utility shall open, close, and/or copy file descriptors as specified by any redirections as part of the command.
 ~~~
 
-Wait, that's great! It's actually *much* more powerful that the trivial case I used as an excuse to write this article. Really, the opportunities are countless and they enable you to operate on a whole new level. 
+And before you ask -- yes, there's a caveat. Unfortunately (or fortunately for process security), once the process has started there's no way to change its file descriptors, unless you resort to some [gdb wizardry](https://www.redpill-linpro.com/sysadvent/2015/12/04/changing-a-process-file-descriptor-with-gdb.html) -- and even then it's *not always* possible. 
 
-You could for instance concatenate outputs from multiple commands and collect a composite log. You could plug in a pipe to a **running** process to start logging stuff **without ever restarting it**. You could enable (and debug) output redirected to `/dev/null` and disable it again once you're done. And all you're ever going to need is the `exec` command.
-
-The easiest solutions often come unnoticed. I hope this short article will be of use for at least some of you!
+Wrapping up -- while it's not really a game-changer, it's still a feature that can sometimes be put to good use.
