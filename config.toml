@@ -7,6 +7,8 @@ disqusShortname = "mewa"
 pygmentsCodefences = true
 pygmentsStyle = "github"
 
+relativeURLs = true
+
 [taxonomies]
     # Optional. Use if you want tags and lists.
     category = "categories" 
