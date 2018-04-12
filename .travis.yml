@@ -14,5 +14,7 @@ deploy:
   keep-history: true
   local-dir: public
   target-branch: master
-  on:
-    branch: hugo
+
+branches:
+  only:
+    - hugo
