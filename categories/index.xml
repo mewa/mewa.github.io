@@ -29,11 +29,38 @@
     </item>
     
     <item>
+      <title>Continuous Deployment</title>
+      <link>http://marcinchmiel.com/categories/continuous-deployment/</link>
+      <pubDate>Thu, 12 Apr 2018 17:34:29 +0200</pubDate>
+      
+      <guid>http://marcinchmiel.com/categories/continuous-deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration</title>
+      <link>http://marcinchmiel.com/categories/continuous-integration/</link>
+      <pubDate>Thu, 12 Apr 2018 17:34:29 +0200</pubDate>
+      
+      <guid>http://marcinchmiel.com/categories/continuous-integration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Dagger 2</title>
       <link>http://marcinchmiel.com/categories/dagger-2/</link>
       <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
       
       <guid>http://marcinchmiel.com/categories/dagger-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>http://marcinchmiel.com/categories/git/</link>
+      <pubDate>Thu, 12 Apr 2018 17:34:29 +0200</pubDate>
+      
+      <guid>http://marcinchmiel.com/categories/git/</guid>
       <description></description>
     </item>
     

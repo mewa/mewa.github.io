@@ -5,10 +5,22 @@
     <link>http://marcinchmiel.com/posts/</link>
     <description>Recent content in Posts on Marcin Chmiel</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 03 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Apr 2018 17:34:29 +0200</lastBuildDate>
     
 	<atom:link href="http://marcinchmiel.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using git notes to improve CD workflow</title>
+      <link>http://marcinchmiel.com/articles/2018-04/using-git-notes-to-improve-cd-workflow/</link>
+      <pubDate>Thu, 12 Apr 2018 17:34:29 +0200</pubDate>
+      
+      <guid>http://marcinchmiel.com/articles/2018-04/using-git-notes-to-improve-cd-workflow/</guid>
+      <description>&lt;p&gt;Git is certainly one of the most widely used tools in software development industry &amp;ndash; it&amp;rsquo;s essential.
+However, many people forget about the many options it provides apart from serving simply as a VCS.
+I think &lt;code&gt;git notes&lt;/code&gt; is one of such commands, which can immensely improve your workflow &amp;ndash; let&amp;rsquo;s see for ourselves why you&amp;rsquo;d like to start using it.
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Redirecting output to other terminal</title>

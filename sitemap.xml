@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://marcinchmiel.com/articles/2018-04/using-git-notes-to-improve-cd-workflow/</loc>
+    <lastmod>2018-04-12T17:34:29+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://marcinchmiel.com/articles/2017-12/redirecting-output-to-other-terminal/</loc>
     <lastmod>2017-12-03T00:00:00+00:00</lastmod>
   </url>
@@ -51,8 +56,26 @@
   </url>
   
   <url>
+    <loc>http://marcinchmiel.com/categories/continuous-deployment/</loc>
+    <lastmod>2018-04-12T17:34:29+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://marcinchmiel.com/categories/continuous-integration/</loc>
+    <lastmod>2018-04-12T17:34:29+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://marcinchmiel.com/categories/dagger-2/</loc>
     <lastmod>2017-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://marcinchmiel.com/categories/git/</loc>
+    <lastmod>2018-04-12T17:34:29+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -76,7 +99,7 @@
   
   <url>
     <loc>http://marcinchmiel.com/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-12T17:34:29+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -88,7 +111,7 @@
   
   <url>
     <loc>http://marcinchmiel.com/posts/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-12T17:34:29+02:00</lastmod>
     <priority>0</priority>
   </url>
   
