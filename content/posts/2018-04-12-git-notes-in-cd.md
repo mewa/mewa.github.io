@@ -1,11 +1,11 @@
 ---
 categories:
 - git
-- CI/CD
+- Continuous Deployment
+- Continuous Integration
 title: "Using git notes to improve CD workflow"
 date: 2018-04-12T17:34:29+02:00
 comments: true
-draft: true
 ---
 
 Git is certainly one of the most widely used tools in software development industry -- it's essential.
@@ -31,7 +31,7 @@ We're running a company `example.com` which has two services:
 * and a backend service, located in a GitHub repository `example.com/backend`.
 
 Since `frontend` and `backend` depend on each other, we'll have another repository, `example.com/deploy` which covers
-end-to-end tests as well as manages configuration of each service.
+end-to-end tests as well as manages configuration of each service (it also stores each service repository as a git submodule).
 
 Each repository has two branches:
 
@@ -60,14 +60,69 @@ Luckily, we can just protect our `production` branch and make GitHub enforce for
 
 However, we're hitting another problem. Previously, after a successfult build we were committing information about the build artifacts to production branch.
 Well, we cannot do that now, since doing so would mean we're introducing *untested* changes that cannot be merged into `production` --- even
-if we know for a fact it's just metadata.
+if we know for a fact it's just metadata. So what can we do without resorting to some hacks in CI code and/or repeating correct builds?
 
 ### git notes revisited
 
 This is where `git notes` command comes in handy. Just as I have already mentioned it lets us attach objects (data) without modifying our commit hash.
+For us, this means that we won't have to test the changes again and they're safe to merge into `production`. A quick win.
 
-There is one caveat:
+Let's add our artifacts info:
+```sh
+mewa@sea:backend$ cat artifacts.json
+{
+    "name": "backend"
+    "url": "https://example.com/artifacts/1234"
+}
+mewa@sea:backend$ git notes --ref build-artifacts add -fF artifacts.json
+```
+Let's verify we actually added contents of `artifacts.json` as our note:
+```sh
+mewa@sea:backend$ git notes --ref build-artifacts show
+{
+    "name": "backend"
+    "url": "https://example.com/artifacts/1234"
+}
+```
+It's there. Time to push changes to upstream.
+```sh
+mewa@sea:backend$ git push -f origin refs/notes/build-artifacts
+```
+Let's retrieve the notes in our `example.com/deploy` repository. We have two submodules:
+```sh
+mewa@sea:deploy$ tree
+.
+├── backend
+└── frontend
+```
+By default git doesn't fetch notes, so we'll have to do it ourselves.
+```sh
+mewa@sea:deploy$ cd backend
+mewa@sea:deploy/backend$ git fetch origin refs/notes/build-artifacts:refs/notes/build-artifacts
+```
+We now have our notes available. Notice, we only fetched notes for ref `build-artifacts` -- if we wanted, we could've just pulled all the notes by
+specifying `refs/notes/*` instead of `build-artifacts` specifically.
+```sh
+mewa@sea:deploy/backend$ git notes --ref build-artifacts show
+{
+    "name": "backend"
+    "url": "https://example.com/artifacts/1234"
+}
+
+```
+That's great, our pipeline is reusing artifacts, so changes are delivered faster!
+
+There is one caveat, however:
 
 git notes are separate refs that can be overwritten or even deleted. This means that critical data shouldn't be stored in them.
 
 Information about build artifacts, however, is not critical, because it can be easily reproduced through building our production branch again.
+
+Then again, in a typical scenario such a thing should never happen.
+
+### Wrapping up
+
+Git is full of different features, many of them aren't used so widely. I hope this article showed you a valid use-case for `git notes`, or even
+better -- you found your own usecase while reading it!
+
+Why don't you share what are *your* favourite git tricks?
