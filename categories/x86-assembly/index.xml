@@ -16,7 +16,7 @@
       <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>http://marcinchmiel.com/articles/2017-07/polyglot-assembly-101/</guid>
-      <description>&lt;p&gt;As promised in my &lt;a href=&#34;{{ &amp;quot;articles/2017-05/hello-world&amp;quot; | absolute_url }}&#34;&gt;somewhat lengthy &amp;ldquo;Hello World&amp;rdquo; post&lt;/a&gt;, although much later than intended, I finally got down to writing a follow-up post.&lt;/p&gt;
+      <description>&lt;p&gt;As promised in my &lt;a href=&#34;http://marcinchmiel.com/articles/2017-05/the-somewhat-lengthy-hello-world-post/&#34;&gt;somewhat lengthy &amp;ldquo;Hello World&amp;rdquo; post&lt;/a&gt;, although much later than intended, I finally got down to writing a follow-up post.&lt;/p&gt;
 
 &lt;p&gt;I remember one of the very first lectures during my uni course &amp;ndash; when &lt;code&gt;assembly&lt;/code&gt; language was being introduced. Nothing too deep, really. However, I recall a statement being made, that probably still lives in the minds of the many that heard it (and perhaps even more that didn&amp;rsquo;t). Namely &amp;ndash; that &lt;code&gt;assembly&lt;/code&gt; code is not &lt;em&gt;portable&lt;/em&gt;.&lt;/p&gt;
 
