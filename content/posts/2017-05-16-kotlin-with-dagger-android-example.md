@@ -3,6 +3,7 @@ categories:
 - Android
 - Kotlin
 - Dagger 2
+aliases: ["/articles/2017-05/kotlin-with-dagger-android-example"]
 comments: true
 date: "2017-05-16T00:00:00Z"
 title: Kotlin with dagger-android basic setup

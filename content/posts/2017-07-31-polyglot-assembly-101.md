@@ -7,7 +7,7 @@ date: "2017-07-31T00:00:00Z"
 title: Polyglot assembly 101
 ---
 
-As promised in my [somewhat lengthy "Hello World" post]({{ "articles/2017-05/hello-world" | absolute_url }}), although much later than intended, I finally got down to writing a follow-up post. 
+As promised in my [somewhat lengthy "Hello World" post]({{< ref "2017-05-14-hello-world.md" >}}), although much later than intended, I finally got down to writing a follow-up post. 
 
 I remember one of the very first lectures during my uni course -- when `assembly` language was being introduced. Nothing too deep, really. However, I recall a statement being made, that probably still lives in the minds of the many that heard it (and perhaps even more that didn't). Namely -- that `assembly` code is not *portable*.
 
@@ -76,7 +76,7 @@ int main(int argc, char** argv) {
 
 Now, let's write a piece of assembly that will generate our machine code. 
 
-One thing to note before that: as I'm writing this post, I'm sitting on a Linux machine, hence the [ABI](https://en.wikipedia.org/wiki/Application_binary_interface) is different from what you could see in the [previous post]({{ "/articles/2017-05/hello-world" | absolute_url }}) -- for now you don't have to worry about it, I'm going to cover this in the following post. 
+One thing to note before that: as I'm writing this post, I'm sitting on a Linux machine, hence the [ABI](https://en.wikipedia.org/wiki/Application_binary_interface) is different from what you could see in the [previous post]({{< ref "2017-05-14-hello-world.md" >}}) -- for now you don't have to worry about it, I'm going to cover this in the following post. 
 
 ```nasm
 BITS 32

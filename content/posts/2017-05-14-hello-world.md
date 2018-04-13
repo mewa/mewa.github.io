@@ -171,7 +171,7 @@ While I tried to explain everything at hand some things may still not be clear i
 
 It's true that the assembly is not the most common language, but it is pretty interesting, nevertheless. And powerful.
 
-In the [upcoming posts]({{ "/articles/2017-07/polyglot-assembly-101" | absolute_url }}) we'll see however that sometimes it comes in very handy.
+In the [upcoming posts]({{< ref "2017-07-31-polyglot-assembly-101.md" >}}) we'll see however that sometimes it comes in very handy.
 
 Last but not least, since this is my very first blog post -- please give me your feedback, whether you liked it -- or not (and why); comment, share, etc. etc.!
 ```sh
