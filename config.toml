@@ -9,6 +9,8 @@ pygmentsStyle = "github"
 
 relativeURLs = true
 
+GoogleAnalytics = "UA-99152208-1"
+
 [taxonomies]
     # Optional. Use if you want tags and lists.
     category = "categories" 
@@ -26,8 +28,6 @@ relativeURLs = true
 
     author = "Marcin Chmiel"
     bio = "Software magician, cloud architect, functional programming freak"
-
-    ga_api_key = "UA-99152208-1"
 
 [menu]
 

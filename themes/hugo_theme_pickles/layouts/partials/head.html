@@ -47,5 +47,17 @@
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
   {{ end }}
   <script type="text/javascript" src="{{ "js/bundle.js" | absURL }}"></script>
+
+  {{ if and .Site.GoogleAnalytics (not .Site.IsServer) }}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.GoogleAnalytics }}"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', {{ .Site.GoogleAnalytics }});
+  </script>
+  {{ end }}
+
   {{ partial "head_custom.html" . }}
 </head>
