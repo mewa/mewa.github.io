@@ -5,10 +5,27 @@
     <link>http://marcinchmiel.com/categories/continuous-integration/</link>
     <description>Recent content in Continuous Integration on Marcin Chmiel</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 12 Apr 2018 17:34:29 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 02 May 2018 02:18:29 +0200</lastBuildDate>
     
 	<atom:link href="http://marcinchmiel.com/categories/continuous-integration/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Launch a CI service in 100 lines of Clojure</title>
+      <link>http://marcinchmiel.com/articles/2018-05/launch-a-ci-service-in-100-lines-of-clojure/</link>
+      <pubDate>Wed, 02 May 2018 02:18:29 +0200</pubDate>
+      
+      <guid>http://marcinchmiel.com/articles/2018-05/launch-a-ci-service-in-100-lines-of-clojure/</guid>
+      <description>&lt;p&gt;There are many factors that contribute to the quality of the code we produce. Undoubtfully, adopting Continuous Integration
+is one of the biggest leaps one can make when closing the gap between &lt;em&gt;The Holy Grail Of Software Engineering&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Over time there have emerged quite a few CI services that make it easy to integrate changes to our code.
+Unless you&amp;rsquo;ve been living in vacuum for the past few years, you must&amp;rsquo;ve heard names like Jenkins, TravisCI or CircleCI.&lt;/p&gt;
+
+&lt;p&gt;But what if I told you, you could roll your own YetAnotherCI in just around 100 lines of Clojure? If this sounds interesting, make
+sure to follow along and ship YACI with us.
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Using git notes to improve CD workflow</title>

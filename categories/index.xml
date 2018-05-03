@@ -20,6 +20,15 @@
     </item>
     
     <item>
+      <title>Clojure</title>
+      <link>http://marcinchmiel.com/categories/clojure/</link>
+      <pubDate>Wed, 02 May 2018 02:18:29 +0200</pubDate>
+      
+      <guid>http://marcinchmiel.com/categories/clojure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Common Lisp</title>
       <link>http://marcinchmiel.com/categories/common-lisp/</link>
       <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
@@ -31,7 +40,7 @@
     <item>
       <title>Continuous Deployment</title>
       <link>http://marcinchmiel.com/categories/continuous-deployment/</link>
-      <pubDate>Thu, 12 Apr 2018 17:34:29 +0200</pubDate>
+      <pubDate>Wed, 02 May 2018 02:18:29 +0200</pubDate>
       
       <guid>http://marcinchmiel.com/categories/continuous-deployment/</guid>
       <description></description>
@@ -40,7 +49,7 @@
     <item>
       <title>Continuous Integration</title>
       <link>http://marcinchmiel.com/categories/continuous-integration/</link>
-      <pubDate>Thu, 12 Apr 2018 17:34:29 +0200</pubDate>
+      <pubDate>Wed, 02 May 2018 02:18:29 +0200</pubDate>
       
       <guid>http://marcinchmiel.com/categories/continuous-integration/</guid>
       <description></description>
@@ -88,6 +97,15 @@
       <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
       
       <guid>http://marcinchmiel.com/categories/kotlin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>http://marcinchmiel.com/categories/kubernetes/</link>
+      <pubDate>Wed, 02 May 2018 02:18:29 +0200</pubDate>
+      
+      <guid>http://marcinchmiel.com/categories/kubernetes/</guid>
       <description></description>
     </item>
     
