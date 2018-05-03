@@ -173,7 +173,15 @@ going to split it into 2 separate endpoints: one for posting a job, another for 
   [<span style="color:#000;font-weight:bold">&amp;</span> <span style="color:#008080">args</span>]
   (<span style="color:#008080">jetty/run-jetty</span> (<span style="color:#008080">route</span> {<span style="color:#d14">&#34;/run&#34;</span> <span style="color:#008080">run-handler</span>
                            <span style="color:#d14">&#34;/get&#34;</span> <span style="color:#008080">get-handler</span>}) {<span style="color:#990073">:port</span> <span style="color:#099">4000</span>}))</code></pre></div>
-<p>Before we can actually write these handlers we&rsquo;ll need code for interfacing with Kubernetes API. Let&rsquo;s start with posting new jobs.</p>
+<p>Before we can actually write these handlers we&rsquo;ll need code for interfacing with Kubernetes API. The only obstacle (well, not really) here is that
+we must first generate it using <code>swagger-codegen</code>.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mewa@see$ curl localhost:8001/swagger.json -o api.json
+mewa@sea$ java -jar swagger-codegen-cli-2.3.1.jar <span style="color:#d14">\
+</span><span style="color:#d14"></span>    generate -i api.json -l clojure -o kubernetes</code></pre></div>
+<p>Unfortunately, as I&rsquo;m writing this article, this won&rsquo;t work due to a bug in <code>swagger-codegen</code>. You can either pull relevant code from my
+<a href="git@github.com:mewa/clojure-k8s.git">repo</a> or apply <a href="https://github.com/swagger-api/swagger-codegen/pull/8096">required patch</a> to the generated code manually.</p>
+
+<p>But minor hurdles won&rsquo;t stop us from shipping YACI, will they? Let&rsquo;s proceed with code for posting new jobs.</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#008080">require</span> <span style="color:#000;font-weight:bold">&#39;</span>[<span style="color:#008080">kubernetes.api.batch-v-</span> <span style="color:#990073">:as</span> <span style="color:#008080">k8sbatch</span>])
 
 (<span style="color:#000;font-weight:bold">defn </span><span style="color:#008080">new-job</span>
@@ -214,7 +222,7 @@ NAME                                                 READY     STATUS      RESTA
 k8s-job-5079d2cf-acc7-4787-96d6-12d83be720a6-2fs6t   <span style="color:#099">0</span>/1       Completed   <span style="color:#099">0</span>          1m
 mewa@sea$ kubectl logs k8s-job-5079d2cf-acc7-4787-96d6-12d83be720a6-2fs6t
 success</code></pre></div>
-<p>Great, it seems to work. Now let&rsquo;s retrieve those logs programatically.</p>
+<p>Great, it seems to work. Now let&rsquo;s retrieve these logs programatically.</p>
 
 <p>The steps required are identical to what we&rsquo;ve been doing in with <code>kubectl</code>.</p>
 
