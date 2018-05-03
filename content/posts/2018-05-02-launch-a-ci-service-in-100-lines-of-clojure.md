@@ -125,7 +125,7 @@ mewa@sea$ java -jar swagger-codegen-cli-2.3.1.jar \
 ```
 
 Unfortunately, as I'm writing this article, this won't work due to a bug in `swagger-codegen`. You can either pull relevant code from my
-[repo](git@github.com:mewa/clojure-k8s.git) or apply [required patch](https://github.com/swagger-api/swagger-codegen/pull/8096) to the generated code manually.
+[repo](https://github.com/mewa/clojure-k8s/tree/master/src/kubernetes) or apply [required patch](https://github.com/swagger-api/swagger-codegen/pull/8096) to the generated code manually.
 
 But minor hurdles won't stop us from shipping YACI, will they? Let's proceed with code for posting new jobs.
 
