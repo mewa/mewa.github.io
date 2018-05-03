@@ -179,7 +179,7 @@ we must first generate it using <code>swagger-codegen</code>.</p>
 mewa@sea$ java -jar swagger-codegen-cli-2.3.1.jar <span style="color:#d14">\
 </span><span style="color:#d14"></span>    generate -i api.json -l clojure -o kubernetes</code></pre></div>
 <p>Unfortunately, as I&rsquo;m writing this article, this won&rsquo;t work due to a bug in <code>swagger-codegen</code>. You can either pull relevant code from my
-<a href="git@github.com:mewa/clojure-k8s.git">repo</a> or apply <a href="https://github.com/swagger-api/swagger-codegen/pull/8096">required patch</a> to the generated code manually.</p>
+<a href="https://github.com/mewa/clojure-k8s/tree/master/src/kubernetes">repo</a> or apply <a href="https://github.com/swagger-api/swagger-codegen/pull/8096">required patch</a> to the generated code manually.</p>
 
 <p>But minor hurdles won&rsquo;t stop us from shipping YACI, will they? Let&rsquo;s proceed with code for posting new jobs.</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-clojure" data-lang="clojure">(<span style="color:#008080">require</span> <span style="color:#000;font-weight:bold">&#39;</span>[<span style="color:#008080">kubernetes.api.batch-v-</span> <span style="color:#990073">:as</span> <span style="color:#008080">k8sbatch</span>])
