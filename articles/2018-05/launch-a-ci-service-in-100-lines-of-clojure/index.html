@@ -288,8 +288,22 @@ with <code>doall</code>, to get side effects (run API calls).</p>
     {<span style="color:#990073">:status</span> <span style="color:#099">400</span>
      <span style="color:#990073">:body</span> <span style="color:#d14">&#34;id query param is required&#34;</span>}))</code></pre></div>
 <p>With our handlers being ready, it&rsquo;s time to package our API and run it on our servers.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mewa@sea$ lein uberjar
+mewa@sea$ java -jar k8s-0.1.0-SNAPSHOT-standalone.jar</code></pre></div>
+<p>Let&rsquo;s test our api in another terminal.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mewa@sea$ curl localhost:4000/run -d <span style="color:#d14">&#39;echo great success&#39;</span>
+<span style="color:#000;font-weight:bold">{</span>
+  <span style="color:#d14">&#34;name&#34;</span> : <span style="color:#d14">&#34;k8s-job-730cdd63-cefb-44f2-b760-cde00c24a35e&#34;</span>
+<span style="color:#000;font-weight:bold">}</span>
+mewa@sea$ curl localhost:4000/get?id<span style="color:#000;font-weight:bold">=</span>k8s-job-730cdd63-cefb-44f2-b760-cde00c24a35e
+<span style="color:#000;font-weight:bold">[</span> <span style="color:#000;font-weight:bold">{</span>
+  <span style="color:#d14">&#34;pod&#34;</span> : <span style="color:#d14">&#34;k8s-job-730cdd63-cefb-44f2-b760-cde00c24a35e-xsz7k&#34;</span>,
+  <span style="color:#d14">&#34;status&#34;</span> : <span style="color:#d14">&#34;Succeeded&#34;</span>,
+  <span style="color:#d14">&#34;log&#34;</span> : <span style="color:#d14">&#34;great success\n&#34;</span>
+<span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">]</span></code></pre></div>
+<p>What can I say, the log is pretty accurate. Great success!</p>
 
-<p>Let&rsquo;s just do a final check before we finish to make sure I wasn&rsquo;t lying to you:</p>
+<p>Before we finish, let&rsquo;s just do a final check to make sure I wasn&rsquo;t lying to you:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mewa@sea$ wc -l &lt; src/k8s/core.clj
 <span style="color:#099">95</span></code></pre></div>
 <p>95 lines of code, including docstrings! If we wrote this in Java our imports would have more!</p>
