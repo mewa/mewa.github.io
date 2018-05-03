@@ -115,7 +115,19 @@ Next, we'll create `/run` and `/get` endpoints, which will run their respective 
                            "/get" get-handler}) {:port 4000}))
 ```
 
-Before we can actually write these handlers we'll need code for interfacing with Kubernetes API. Let's start with posting new jobs.
+Before we can actually write these handlers we'll need code for interfacing with Kubernetes API. The only obstacle (well, not really) here is that
+we must first generate it using `swagger-codegen`.
+
+```sh
+mewa@see$ curl localhost:8001/swagger.json -o api.json
+mewa@sea$ java -jar swagger-codegen-cli-2.3.1.jar \
+    generate -i api.json -l clojure -o kubernetes
+```
+
+Unfortunately, as I'm writing this article, this won't work due to a bug in `swagger-codegen`. You can either pull relevant code from my
+[repo](git@github.com:mewa/clojure-k8s.git) or apply [required patch](https://github.com/swagger-api/swagger-codegen/pull/8096) to the generated code manually.
+
+But minor hurdles won't stop us from shipping YACI, will they? Let's proceed with code for posting new jobs.
 
 ```clojure
 (require '[kubernetes.api.batch-v- :as k8sbatch])
@@ -171,7 +183,7 @@ mewa@sea$ kubectl logs k8s-job-5079d2cf-acc7-4787-96d6-12d83be720a6-2fs6t
 success
 ```
 
-Great, it seems to work. Now let's retrieve those logs programatically.
+Great, it seems to work. Now let's retrieve these logs programatically.
 
 The steps required are identical to what we've been doing in with `kubectl`.
 
