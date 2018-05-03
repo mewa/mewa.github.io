@@ -4,10 +4,9 @@ categories:
 - Kubernetes
 - Continuous Deployment
 - Continuous Integration
-title: "Start a CI service in 100 lines of Clojure"
+title: "Launch a CI service in 100 lines of Clojure"
 date: 2018-05-02T02:18:29+02:00
 comments: true
-draft: true
 ---
 
 There are many factors that contribute to the quality of the code we produce. Undoubtfully, adopting Continuous Integration
@@ -89,7 +88,7 @@ Great, let's get down to writing our API wrapper.
 
 ### Writing our API
 
-First of all, as listed earlier we have one goal --- to run code and report. Since CI jobs can be long running, we're
+As mentioned earlier, we have one goal --- to run code and report. Since CI jobs can be long running we're
 going to split it into 2 separate endpoints: one for posting a job, another for retrieving info about it.
 
 We're going to use [ring](https://github.com/ring-clojure/ring) for our API server.
@@ -98,9 +97,18 @@ We're going to use [ring](https://github.com/ring-clojure/ring) for our API serv
 (require '[ring.adapter.jetty :as jetty])
 ```
 
-Next, we create `/run` and `/get` endpoints, which will run their respective handlers. We'll expose them at port 4000.
+Next, we'll create `/run` and `/get` endpoints, which will run their respective handlers. We'll expose them at port 4000.
 
 ```clojure
+(defn route
+  "Given a map of HANDLERS, returns a Ring handler which matches
+  requst URIs on map keys and executes handlers associated with
+  those keys"
+  [handlers]
+  (fn [request] (if-let [handler (handlers (:uri request))]
+                  (into {:headers {"Content-Type""application/json"}} (handler request))
+                  {:status 404 :body "Not found"})))
+
 (defn -main
   [& args]
   (jetty/run-jetty (route {"/run" run-handler
@@ -126,7 +134,9 @@ Before we can actually write these handlers we'll need code for interfacing with
     {:name job-name}))
 ```
 
-Before we can verify it's working, we'll need to supply a context for the Kubernetes API. Let's create a helper function that will take
+If you've taken a look at Kubernetes job specs you'd see it's actually a 1:1 mapping.
+
+In order to verify it's working, we'll need to supply a context for the Kubernetes API. Let's create a helper function that will take
 a function and run it in the context of our proxied Kubernetes API.
 
 ```clojure
@@ -171,4 +181,86 @@ The steps required are identical to what we've been doing in with `kubectl`.
 ```clojure
 (require '[kubernetes.api.core-v- :as k8scorev])
 
+(defn job-pods
+  "Get pods for job ID and return a channel with information about
+  each pod"
+  [id]
+  (map (fn [v] {:name (get-in v [:metadata :name])
+                :status (get-in v [:status :phase])})
+       (:items (k8scorev/list-core-v1-namespaced-pod
+                "default"
+                {:label-selector (str "job-name=" id)}))))
+
+(defn pod-logs
+  "Get logs for each item in channel PODS and return a channel
+  with logs for each pod"
+  [podinfo]
+  (let [pod (:name podinfo)
+        status (:status podinfo)]
+    {:pod pod
+     :status status
+     :log (k8scorev/read-core-v1-namespaced-pod-log pod "default")}))
 ```
+
+Now we can easily retrieve our logs. Note that we have to force evaluation of returned sequence,
+with `doall`, to get side effects (run API calls).
+```clojure
+(defn get-job
+  "Get information for job with given ID"
+  [id]
+  (let [pods (job-pods id)]
+    (doall (map pod-logs pods))))
+```
+
+Last thing that's left is hooking these functions in as request handlers in our API. It's pretty straight-forward.
+
+```clojure
+(require '[cheshire.core :refer :all])
+
+(defn run-handler
+  "Ring handler which parses REQUEST and starts a job"
+  [request]
+  (let [handler (fn [cmd] (run-k8s new-job cmd))
+        resp (-> request
+                 :body
+                 slurp
+                 handler)]
+    {:status 200
+     :body (generate-string resp {:pretty true})}))
+
+(defn explode-query
+  "Explode query string Q into a map"
+  [q]
+  (reduce #(apply assoc %1 %2) {}
+       (map #(s/split % #"=") (s/split q #"&"))))
+
+(defn get-handler
+  "Ring handler which parses REQUEST and returns job info"
+  [request]
+  (if-let [id ((explode-query (:query-string request)) "id")]
+    (let [jobinfo (run-k8s get-job id)]
+      {:status 200
+       :body (generate-string jobinfo {:pretty true})})
+    {:status 400
+     :body "id query param is required"}))
+```
+
+With our handlers being ready, it's time to package our API and run it on our servers.
+
+Let's just do a final check before we finish to make sure I wasn't lying to you:
+
+```sh
+mewa@sea$ wc -l < src/k8s/core.clj
+95
+```
+
+95 lines of code, including docstrings! If we wrote this in Java our imports would have more!
+
+### Wrapping up
+
+Now that our CI is packaged all that's left to do is to buy an `.io` domain, hire a marketing team and start collecting money!
+
+I hope you had as much fun reading through this as I had preparing it. As always, code used in this article is
+present [on my Github](https://github.com/mewa/clojure-k8s).
+
+And when you ship --- remember, the `io` part is crucial!
