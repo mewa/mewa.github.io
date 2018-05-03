@@ -259,7 +259,29 @@ Last thing that's left is hooking these functions in as request handlers in our 
 
 With our handlers being ready, it's time to package our API and run it on our servers.
 
-Let's just do a final check before we finish to make sure I wasn't lying to you:
+```sh
+mewa@sea$ lein uberjar
+mewa@sea$ java -jar k8s-0.1.0-SNAPSHOT-standalone.jar
+```
+
+Let's test our api in another terminal.
+
+```sh
+mewa@sea$ curl localhost:4000/run -d 'echo great success'
+{
+  "name" : "k8s-job-730cdd63-cefb-44f2-b760-cde00c24a35e"
+}
+mewa@sea$ curl localhost:4000/get?id=k8s-job-730cdd63-cefb-44f2-b760-cde00c24a35e
+[ {
+  "pod" : "k8s-job-730cdd63-cefb-44f2-b760-cde00c24a35e-xsz7k",
+  "status" : "Succeeded",
+  "log" : "great success\n"
+} ]
+```
+
+What can I say, the log is pretty accurate. Great success!
+
+Before we finish, let's just do a final check to make sure I wasn't lying to you:
 
 ```sh
 mewa@sea$ wc -l < src/k8s/core.clj
