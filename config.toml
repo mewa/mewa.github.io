@@ -1,4 +1,4 @@
-baseURL = "http://marcinchmiel.com"
+baseURL = "https://marcinchmiel.com"
 footnoteReturnLinkContents = "↩"
 title = "Marcin Chmiel"
 theme = "hugo_theme_pickles"
