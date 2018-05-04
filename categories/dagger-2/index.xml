@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dagger 2 on Marcin Chmiel</title>
-    <link>http://marcinchmiel.com/categories/dagger-2/</link>
+    <link>https://marcinchmiel.com/categories/dagger-2/</link>
     <description>Recent content in Dagger 2 on Marcin Chmiel</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 16 May 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://marcinchmiel.com/categories/dagger-2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://marcinchmiel.com/categories/dagger-2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Kotlin with dagger-android basic setup</title>
-      <link>http://marcinchmiel.com/articles/2017-05/kotlin-with-dagger-android-basic-setup/</link>
+      <link>https://marcinchmiel.com/articles/2017-05/kotlin-with-dagger-android-basic-setup/</link>
       <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/articles/2017-05/kotlin-with-dagger-android-basic-setup/</guid>
+      <guid>https://marcinchmiel.com/articles/2017-05/kotlin-with-dagger-android-basic-setup/</guid>
       <description>&lt;p&gt;Since &lt;code&gt;dagger-android&lt;/code&gt; is fairly new, every article on the Internet shows the &amp;ldquo;old&amp;rdquo; way of incorporating Dagger 2 into your Kotlin app, which involves writing some amounts of boilerplate code (well, so does any app using &lt;code&gt;dagger&lt;/code&gt;, but at least with the addition of &lt;code&gt;dagger-android&lt;/code&gt; you can try to cut it down a bit).&lt;/p&gt;
 
 &lt;p&gt;While for seasoned veterans it may be simple, I thought that, especially for less experienced developers, a fully working example could be useful.

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Haskell on Marcin Chmiel</title>
-    <link>http://marcinchmiel.com/categories/haskell/</link>
+    <link>https://marcinchmiel.com/categories/haskell/</link>
     <description>Recent content in Haskell on Marcin Chmiel</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 13 Oct 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://marcinchmiel.com/categories/haskell/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://marcinchmiel.com/categories/haskell/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Haskell-style lambdas in Lisp</title>
-      <link>http://marcinchmiel.com/articles/2017-10/haskell-style-lambdas-in-lisp/</link>
+      <link>https://marcinchmiel.com/articles/2017-10/haskell-style-lambdas-in-lisp/</link>
       <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/articles/2017-10/haskell-style-lambdas-in-lisp/</guid>
+      <guid>https://marcinchmiel.com/articles/2017-10/haskell-style-lambdas-in-lisp/</guid>
       <description>&lt;p&gt;Recently I was toying around with Lisp a bit and thought I&amp;rsquo;d share some insights.&lt;/p&gt;
 
 &lt;p&gt;As you may or may not know programming in Lisps is somewhat different from the average programming languages you&amp;rsquo;re used to. In what way, you might ask &amp;ndash; and no, I &lt;em&gt;don&amp;rsquo;t&lt;/em&gt; mean being swarmed up with parenthesis (besides syntax should be the least concern when picking &lt;em&gt;The Right Tool&lt;/em&gt;). Here&amp;rsquo;s why.&lt;/p&gt;</description>
@@ -23,10 +23,10 @@
     
     <item>
       <title>Launching terminal emulator in current working directory in XMonad</title>
-      <link>http://marcinchmiel.com/articles/2017-09/launching-terminal-emulator-in-current-working-directory-in-xmonad/</link>
+      <link>https://marcinchmiel.com/articles/2017-09/launching-terminal-emulator-in-current-working-directory-in-xmonad/</link>
       <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/articles/2017-09/launching-terminal-emulator-in-current-working-directory-in-xmonad/</guid>
+      <guid>https://marcinchmiel.com/articles/2017-09/launching-terminal-emulator-in-current-working-directory-in-xmonad/</guid>
       <description>&lt;p&gt;Recently I got a bit fed up with my &lt;a href=&#34;http://xmonad.org&#34;&gt;XMonad&lt;/a&gt; configuration and decided to add some of the missing bits. After all I made the switch with &lt;em&gt;productivity&lt;/em&gt; in mind so it would be silly to endure even the slightest tradeoffs. If you don&amp;rsquo;t know what XMonad is &amp;ndash; it&amp;rsquo;s an &lt;em&gt;extremely&lt;/em&gt; customizable tiling window manager &amp;ndash; the default configuration is, however, pretty crude, so it doesn&amp;rsquo;t really make sense to switch if you&amp;rsquo;re not going to tweak it, even if just slightly.&lt;/p&gt;
 
 &lt;p&gt;To the point &amp;ndash; one of the things I was missing was the ability to open a new terminal emulator window in the same working directory as the one I had focused. I felt that existing solutions such as the &lt;a href=&#34;https://hackage.haskell.org/package/xmonad-contrib-0.13/docs/XMonad-Layout-WorkspaceDir.html&#34;&gt;WorkspaceDir&lt;/a&gt; extension were lacking and not exactly what I was looking for. And so I had to write one myself. Since I figured I couldn&amp;rsquo;t be the only one in need I decided I&amp;rsquo;d share my snippet.

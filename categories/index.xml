@@ -2,146 +2,146 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Marcin Chmiel</title>
-    <link>http://marcinchmiel.com/categories/</link>
+    <link>https://marcinchmiel.com/categories/</link>
     <description>Recent content in Categories on Marcin Chmiel</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 16 May 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://marcinchmiel.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://marcinchmiel.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Android</title>
-      <link>http://marcinchmiel.com/categories/android/</link>
+      <link>https://marcinchmiel.com/categories/android/</link>
       <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/categories/android/</guid>
+      <guid>https://marcinchmiel.com/categories/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Clojure</title>
-      <link>http://marcinchmiel.com/categories/clojure/</link>
+      <link>https://marcinchmiel.com/categories/clojure/</link>
       <pubDate>Wed, 02 May 2018 02:18:29 +0200</pubDate>
       
-      <guid>http://marcinchmiel.com/categories/clojure/</guid>
+      <guid>https://marcinchmiel.com/categories/clojure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Common Lisp</title>
-      <link>http://marcinchmiel.com/categories/common-lisp/</link>
+      <link>https://marcinchmiel.com/categories/common-lisp/</link>
       <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/categories/common-lisp/</guid>
+      <guid>https://marcinchmiel.com/categories/common-lisp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Continuous Deployment</title>
-      <link>http://marcinchmiel.com/categories/continuous-deployment/</link>
+      <link>https://marcinchmiel.com/categories/continuous-deployment/</link>
       <pubDate>Wed, 02 May 2018 02:18:29 +0200</pubDate>
       
-      <guid>http://marcinchmiel.com/categories/continuous-deployment/</guid>
+      <guid>https://marcinchmiel.com/categories/continuous-deployment/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Continuous Integration</title>
-      <link>http://marcinchmiel.com/categories/continuous-integration/</link>
+      <link>https://marcinchmiel.com/categories/continuous-integration/</link>
       <pubDate>Wed, 02 May 2018 02:18:29 +0200</pubDate>
       
-      <guid>http://marcinchmiel.com/categories/continuous-integration/</guid>
+      <guid>https://marcinchmiel.com/categories/continuous-integration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dagger 2</title>
-      <link>http://marcinchmiel.com/categories/dagger-2/</link>
+      <link>https://marcinchmiel.com/categories/dagger-2/</link>
       <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/categories/dagger-2/</guid>
+      <guid>https://marcinchmiel.com/categories/dagger-2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>http://marcinchmiel.com/categories/git/</link>
+      <link>https://marcinchmiel.com/categories/git/</link>
       <pubDate>Thu, 12 Apr 2018 17:34:29 +0200</pubDate>
       
-      <guid>http://marcinchmiel.com/categories/git/</guid>
+      <guid>https://marcinchmiel.com/categories/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Haskell</title>
-      <link>http://marcinchmiel.com/categories/haskell/</link>
+      <link>https://marcinchmiel.com/categories/haskell/</link>
       <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/categories/haskell/</guid>
+      <guid>https://marcinchmiel.com/categories/haskell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hello World</title>
-      <link>http://marcinchmiel.com/categories/hello-world/</link>
+      <link>https://marcinchmiel.com/categories/hello-world/</link>
       <pubDate>Sun, 14 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/categories/hello-world/</guid>
+      <guid>https://marcinchmiel.com/categories/hello-world/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kotlin</title>
-      <link>http://marcinchmiel.com/categories/kotlin/</link>
+      <link>https://marcinchmiel.com/categories/kotlin/</link>
       <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/categories/kotlin/</guid>
+      <guid>https://marcinchmiel.com/categories/kotlin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kubernetes</title>
-      <link>http://marcinchmiel.com/categories/kubernetes/</link>
+      <link>https://marcinchmiel.com/categories/kubernetes/</link>
       <pubDate>Wed, 02 May 2018 02:18:29 +0200</pubDate>
       
-      <guid>http://marcinchmiel.com/categories/kubernetes/</guid>
+      <guid>https://marcinchmiel.com/categories/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Polyglot</title>
-      <link>http://marcinchmiel.com/categories/polyglot/</link>
+      <link>https://marcinchmiel.com/categories/polyglot/</link>
       <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/categories/polyglot/</guid>
+      <guid>https://marcinchmiel.com/categories/polyglot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shell</title>
-      <link>http://marcinchmiel.com/categories/shell/</link>
+      <link>https://marcinchmiel.com/categories/shell/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/categories/shell/</guid>
+      <guid>https://marcinchmiel.com/categories/shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>X86 Assembly</title>
-      <link>http://marcinchmiel.com/categories/x86-assembly/</link>
+      <link>https://marcinchmiel.com/categories/x86-assembly/</link>
       <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/categories/x86-assembly/</guid>
+      <guid>https://marcinchmiel.com/categories/x86-assembly/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Xmonad</title>
-      <link>http://marcinchmiel.com/categories/xmonad/</link>
+      <link>https://marcinchmiel.com/categories/xmonad/</link>
       <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/categories/xmonad/</guid>
+      <guid>https://marcinchmiel.com/categories/xmonad/</guid>
       <description></description>
     </item>
     

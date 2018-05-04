@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Marcin Chmiel</title>
-    <link>http://marcinchmiel.com/posts/</link>
+    <link>https://marcinchmiel.com/posts/</link>
     <description>Recent content in Posts on Marcin Chmiel</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 02 May 2018 02:18:29 +0200</lastBuildDate>
     
-	<atom:link href="http://marcinchmiel.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://marcinchmiel.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Launch a CI service in 100 lines of Clojure</title>
-      <link>http://marcinchmiel.com/articles/2018-05/launch-a-ci-service-in-100-lines-of-clojure/</link>
+      <link>https://marcinchmiel.com/articles/2018-05/launch-a-ci-service-in-100-lines-of-clojure/</link>
       <pubDate>Wed, 02 May 2018 02:18:29 +0200</pubDate>
       
-      <guid>http://marcinchmiel.com/articles/2018-05/launch-a-ci-service-in-100-lines-of-clojure/</guid>
+      <guid>https://marcinchmiel.com/articles/2018-05/launch-a-ci-service-in-100-lines-of-clojure/</guid>
       <description>&lt;p&gt;There are many factors that contribute to the quality of the code we produce. Undoubtfully, adopting Continuous Integration
 is one of the biggest leaps one can make when closing the gap between &lt;em&gt;The Holy Grail Of Software Engineering&lt;/em&gt;.&lt;/p&gt;
 
@@ -29,10 +29,10 @@ sure to follow along and ship YACI with us.
     
     <item>
       <title>Using git notes to improve CD workflow</title>
-      <link>http://marcinchmiel.com/articles/2018-04/using-git-notes-to-improve-cd-workflow/</link>
+      <link>https://marcinchmiel.com/articles/2018-04/using-git-notes-to-improve-cd-workflow/</link>
       <pubDate>Thu, 12 Apr 2018 17:34:29 +0200</pubDate>
       
-      <guid>http://marcinchmiel.com/articles/2018-04/using-git-notes-to-improve-cd-workflow/</guid>
+      <guid>https://marcinchmiel.com/articles/2018-04/using-git-notes-to-improve-cd-workflow/</guid>
       <description>&lt;p&gt;Git is certainly one of the most widely used tools in software development industry &amp;ndash; it&amp;rsquo;s essential.
 However, many people forget about the many options it provides apart from serving simply as a VCS.
 I think &lt;code&gt;git notes&lt;/code&gt; is one of such commands, which can immensely improve your workflow &amp;ndash; let&amp;rsquo;s see for ourselves why you&amp;rsquo;d like to start using it.
@@ -41,20 +41,20 @@ I think &lt;code&gt;git notes&lt;/code&gt; is one of such commands, which can im
     
     <item>
       <title>Redirecting output to other terminal</title>
-      <link>http://marcinchmiel.com/articles/2017-12/redirecting-output-to-other-terminal/</link>
+      <link>https://marcinchmiel.com/articles/2017-12/redirecting-output-to-other-terminal/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/articles/2017-12/redirecting-output-to-other-terminal/</guid>
+      <guid>https://marcinchmiel.com/articles/2017-12/redirecting-output-to-other-terminal/</guid>
       <description>&lt;p&gt;There are many reasons one might want to see output from shell commands in another terminal emulator but it definitely has its uses. The other day it just so happended that I needed such a functionality. Without going into details I&amp;rsquo;m going to show you how to achieve such behaviour &amp;ndash; and more &amp;ndash; easily, by leveraging the fact that under the hood std(in|out|err) are just *nix file descriptors.
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Haskell-style lambdas in Lisp</title>
-      <link>http://marcinchmiel.com/articles/2017-10/haskell-style-lambdas-in-lisp/</link>
+      <link>https://marcinchmiel.com/articles/2017-10/haskell-style-lambdas-in-lisp/</link>
       <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/articles/2017-10/haskell-style-lambdas-in-lisp/</guid>
+      <guid>https://marcinchmiel.com/articles/2017-10/haskell-style-lambdas-in-lisp/</guid>
       <description>&lt;p&gt;Recently I was toying around with Lisp a bit and thought I&amp;rsquo;d share some insights.&lt;/p&gt;
 
 &lt;p&gt;As you may or may not know programming in Lisps is somewhat different from the average programming languages you&amp;rsquo;re used to. In what way, you might ask &amp;ndash; and no, I &lt;em&gt;don&amp;rsquo;t&lt;/em&gt; mean being swarmed up with parenthesis (besides syntax should be the least concern when picking &lt;em&gt;The Right Tool&lt;/em&gt;). Here&amp;rsquo;s why.&lt;/p&gt;</description>
@@ -62,10 +62,10 @@ I think &lt;code&gt;git notes&lt;/code&gt; is one of such commands, which can im
     
     <item>
       <title>Launching terminal emulator in current working directory in XMonad</title>
-      <link>http://marcinchmiel.com/articles/2017-09/launching-terminal-emulator-in-current-working-directory-in-xmonad/</link>
+      <link>https://marcinchmiel.com/articles/2017-09/launching-terminal-emulator-in-current-working-directory-in-xmonad/</link>
       <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/articles/2017-09/launching-terminal-emulator-in-current-working-directory-in-xmonad/</guid>
+      <guid>https://marcinchmiel.com/articles/2017-09/launching-terminal-emulator-in-current-working-directory-in-xmonad/</guid>
       <description>&lt;p&gt;Recently I got a bit fed up with my &lt;a href=&#34;http://xmonad.org&#34;&gt;XMonad&lt;/a&gt; configuration and decided to add some of the missing bits. After all I made the switch with &lt;em&gt;productivity&lt;/em&gt; in mind so it would be silly to endure even the slightest tradeoffs. If you don&amp;rsquo;t know what XMonad is &amp;ndash; it&amp;rsquo;s an &lt;em&gt;extremely&lt;/em&gt; customizable tiling window manager &amp;ndash; the default configuration is, however, pretty crude, so it doesn&amp;rsquo;t really make sense to switch if you&amp;rsquo;re not going to tweak it, even if just slightly.&lt;/p&gt;
 
 &lt;p&gt;To the point &amp;ndash; one of the things I was missing was the ability to open a new terminal emulator window in the same working directory as the one I had focused. I felt that existing solutions such as the &lt;a href=&#34;https://hackage.haskell.org/package/xmonad-contrib-0.13/docs/XMonad-Layout-WorkspaceDir.html&#34;&gt;WorkspaceDir&lt;/a&gt; extension were lacking and not exactly what I was looking for. And so I had to write one myself. Since I figured I couldn&amp;rsquo;t be the only one in need I decided I&amp;rsquo;d share my snippet.
@@ -74,11 +74,11 @@ I think &lt;code&gt;git notes&lt;/code&gt; is one of such commands, which can im
     
     <item>
       <title>Polyglot assembly 101</title>
-      <link>http://marcinchmiel.com/articles/2017-07/polyglot-assembly-101/</link>
+      <link>https://marcinchmiel.com/articles/2017-07/polyglot-assembly-101/</link>
       <pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/articles/2017-07/polyglot-assembly-101/</guid>
-      <description>&lt;p&gt;As promised in my &lt;a href=&#34;http://marcinchmiel.com/articles/2017-05/the-somewhat-lengthy-hello-world-post/&#34;&gt;somewhat lengthy &amp;ldquo;Hello World&amp;rdquo; post&lt;/a&gt;, although much later than intended, I finally got down to writing a follow-up post.&lt;/p&gt;
+      <guid>https://marcinchmiel.com/articles/2017-07/polyglot-assembly-101/</guid>
+      <description>&lt;p&gt;As promised in my &lt;a href=&#34;https://marcinchmiel.com/articles/2017-05/the-somewhat-lengthy-hello-world-post/&#34;&gt;somewhat lengthy &amp;ldquo;Hello World&amp;rdquo; post&lt;/a&gt;, although much later than intended, I finally got down to writing a follow-up post.&lt;/p&gt;
 
 &lt;p&gt;I remember one of the very first lectures during my uni course &amp;ndash; when &lt;code&gt;assembly&lt;/code&gt; language was being introduced. Nothing too deep, really. However, I recall a statement being made, that probably still lives in the minds of the many that heard it (and perhaps even more that didn&amp;rsquo;t). Namely &amp;ndash; that &lt;code&gt;assembly&lt;/code&gt; code is not &lt;em&gt;portable&lt;/em&gt;.&lt;/p&gt;
 
@@ -88,10 +88,10 @@ I think &lt;code&gt;git notes&lt;/code&gt; is one of such commands, which can im
     
     <item>
       <title>Kotlin with dagger-android basic setup</title>
-      <link>http://marcinchmiel.com/articles/2017-05/kotlin-with-dagger-android-basic-setup/</link>
+      <link>https://marcinchmiel.com/articles/2017-05/kotlin-with-dagger-android-basic-setup/</link>
       <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/articles/2017-05/kotlin-with-dagger-android-basic-setup/</guid>
+      <guid>https://marcinchmiel.com/articles/2017-05/kotlin-with-dagger-android-basic-setup/</guid>
       <description>&lt;p&gt;Since &lt;code&gt;dagger-android&lt;/code&gt; is fairly new, every article on the Internet shows the &amp;ldquo;old&amp;rdquo; way of incorporating Dagger 2 into your Kotlin app, which involves writing some amounts of boilerplate code (well, so does any app using &lt;code&gt;dagger&lt;/code&gt;, but at least with the addition of &lt;code&gt;dagger-android&lt;/code&gt; you can try to cut it down a bit).&lt;/p&gt;
 
 &lt;p&gt;While for seasoned veterans it may be simple, I thought that, especially for less experienced developers, a fully working example could be useful.
@@ -103,10 +103,10 @@ This is an example of the most basic setup using &lt;code&gt;dagger-android&lt;/
     
     <item>
       <title>The somewhat lengthy &#34;Hello world&#34; post</title>
-      <link>http://marcinchmiel.com/articles/2017-05/the-somewhat-lengthy-hello-world-post/</link>
+      <link>https://marcinchmiel.com/articles/2017-05/the-somewhat-lengthy-hello-world-post/</link>
       <pubDate>Sun, 14 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://marcinchmiel.com/articles/2017-05/the-somewhat-lengthy-hello-world-post/</guid>
+      <guid>https://marcinchmiel.com/articles/2017-05/the-somewhat-lengthy-hello-world-post/</guid>
       <description>&lt;p&gt;It is a long honored tradition for IT texts to start with these famous words. Over the years, the languages have evolved, so did the paradigms by which we write our code &amp;ndash; yet almost every book or tutorial, on any language, still begins with this simple piece of &lt;em&gt;software&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Since I don&amp;rsquo;t want to stir things up and be some kind of a rebel this blog shall not be different &amp;ndash; in this particular case.
