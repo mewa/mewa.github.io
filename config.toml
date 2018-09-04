@@ -24,7 +24,7 @@ GoogleAnalytics = "UA-99152208-1"
 
     contact = "mailto:m@marcinchmiel.com"
 
-    avatar = "img/avatar.jpg"
+    avatar = "/img/avatar.jpg"
 
     author = "Marcin Chmiel"
     bio = "Software magician, cloud architect, functional programming freak"
