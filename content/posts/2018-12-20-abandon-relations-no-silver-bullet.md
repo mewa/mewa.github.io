@@ -3,7 +3,7 @@ categories:
 - Software Engineering
 - Relational databases
 comments: true
-date: "2018-12-20T17:00:00Z"
+date: "2018-12-20T16:00:00Z"
 title: "Abandon relations all ye who enter here: a treatise on silver bullets"
 ---
 
