@@ -29,6 +29,8 @@ Some of you might say: *but there are read replicas!* Yes, there are read replic
 
 Most smart people have already agreed that eventual consistence is a good thing and just learn how to deal with it. Obviously it would be better to have consistent data at all times but sometimes it's just inevitable.
 
+But let's try another way. You could always evaluate your access patterns and shard your data accordingly. This will leave your RDBMS a bit crippled and you will lose some of the flexibility. It will bleed into your application. To support certain queries and optimize their speed you will probably denormalize some data. But the performance -- sweet -- totally worth it! But come to think of it, doesn't it sound exactly like the set of things you'd do when employing a NoSQL database[^5]?
+
 So what should we do? Use NoSQL? Use SQL?
 
 In many aspects it has become more of a political matter rather than technical. NoSQL vs SQL has become another instance of the endless *vim vs emacs* debate. I'm an Emacs user myself but if you're a Vimmer and it *works for you* then why should I bother. NoSQL vs SQL is exactly that -- except this time you don't have to pick camps.
@@ -55,3 +57,4 @@ Remember -- there are no silver bullets -- apply engineering to your input.
 [^2]: Also an actual example of a "great" idea given -- at this point I was rendered speechless
 [^3]: A made up and exaggerated idea to support my claim. But it's not *that* far-fetched if you asked the *O* people
 [^4]: Used for brevity: as opposed to NoSQL databases
+[^5]: Of course this goes the other way round too -- i.e. when you want to introduce relations into a non-relational database
