@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Engineering on Marcin Chmiel</title>
+    <link>https://marcinchmiel.com/categories/software-engineering/</link>
+    <description>Recent content in Software Engineering on Marcin Chmiel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 20 Dec 2018 16:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marcinchmiel.com/categories/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Abandon relations all ye who enter here: a treatise on silver bullets</title>
+      <link>https://marcinchmiel.com/articles/2018-12/abandon-relations-all-ye-who-enter-here-a-treatise-on-silver-bullets/</link>
+      <pubDate>Thu, 20 Dec 2018 16:00:00 +0000</pubDate>
+      
+      <guid>https://marcinchmiel.com/articles/2018-12/abandon-relations-all-ye-who-enter-here-a-treatise-on-silver-bullets/</guid>
+      <description>&lt;p&gt;Recently I read an article about &lt;a href=&#34;https://www.theguardian.com/info/2018/nov/30/bye-bye-mongo-hello-postgres&#34;&gt;&lt;em&gt;The Guardian&lt;/em&gt; migrating from Mongo to Postgres&lt;/a&gt;. What struck me far more than the article itself, was the heated discussion going on under the reddit post.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
