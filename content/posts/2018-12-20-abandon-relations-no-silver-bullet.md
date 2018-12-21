@@ -55,6 +55,6 @@ Remember -- there are no silver bullets -- apply engineering to your input.
 
 [^1]: An actual example of a "great" idea presented by one of the Oracle people
 [^2]: Also an actual example of a "great" idea given -- at this point I was rendered speechless
-[^3]: A made up and exaggerated idea to support my claim. But it's not *that* far-fetched if you asked the *O* people
+[^3]: I made it up and exaggerated a bit to support my claim. But it's not *that* far-fetched if you asked the *O* people
 [^4]: Used for brevity: as opposed to NoSQL databases
 [^5]: Of course this goes the other way round too -- i.e. when you want to introduce relations into a non-relational database
