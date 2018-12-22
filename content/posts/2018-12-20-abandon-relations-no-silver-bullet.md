@@ -13,7 +13,7 @@ Recently I read an article about [*The Guardian* migrating from Mongo to Postgre
 As if the topic wasn't heated enough it was titled *Bye bye Mongo, Hello Postgres*, which immediately attracted attention of all the relational folks out there naysaying NoSQL solutions. It reminded me some points of a conversation I had several days ago with a couple Oracle zealots.
 Don't get me wrong, Mongo has its flaws -- but on the other hand so does any other solution *including* RDBMSs. However, there are people that strongly believe that not only are they the appropriate solution, but also the *single* solution to all problems humanity has ever had (in terms of software engineering). Including writing all your business logic as stored procedures[^1]. Including serving web pages[^2]. Including Bitcoin mining[^3]. Well, everything.
 
-Have you ever heard the term *jack of all trades*? Let's face the truth, **relational databases are not a silver bullet**.
+Have you ever heard the term *jack of all trades*? But *master of none*! Let's face the truth, **relational databases are not always a silver bullet**.
 
 I'm going to support my claim (or a bold statement, if you will -- pun intended) in a moment but first let's stop and think what is the current state of affairs. Ever since the relational boom a couple decades ago, people have started putting everything in relational databases -- and without questioning it. If you want to store an image and associate it with some data (say it's a user's avatar), what does make more *sense*: to put it together with user data into the database *or* rather save it as a file share and just save a pointer to it? Because both are definitely possible.
 
