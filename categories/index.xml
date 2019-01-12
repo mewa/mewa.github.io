@@ -20,6 +20,15 @@
     </item>
     
     <item>
+      <title>Announcement</title>
+      <link>https://marcinchmiel.com/categories/announcement/</link>
+      <pubDate>Sat, 12 Jan 2019 11:19:09 +0100</pubDate>
+      
+      <guid>https://marcinchmiel.com/categories/announcement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Clojure</title>
       <link>https://marcinchmiel.com/categories/clojure/</link>
       <pubDate>Wed, 02 May 2018 02:18:29 +0200</pubDate>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marcinchmiel.com/articles/2019-01/introducting-authmagic.io---a-passwordless-authentication-service/</loc>
+    <lastmod>2019-01-12T11:19:09+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marcinchmiel.com/articles/2018-12/abandon-relations-all-ye-who-enter-here-a-treatise-on-silver-bullets/</loc>
     <lastmod>2018-12-20T16:00:00+00:00</lastmod>
   </url>
@@ -50,6 +55,12 @@
   <url>
     <loc>https://marcinchmiel.com/categories/android/</loc>
     <lastmod>2017-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/announcement/</loc>
+    <lastmod>2019-01-12T11:19:09+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -121,7 +132,7 @@
   
   <url>
     <loc>https://marcinchmiel.com/</loc>
-    <lastmod>2018-12-20T16:00:00+00:00</lastmod>
+    <lastmod>2019-01-12T11:19:09+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -133,7 +144,7 @@
   
   <url>
     <loc>https://marcinchmiel.com/posts/</loc>
-    <lastmod>2018-12-20T16:00:00+00:00</lastmod>
+    <lastmod>2019-01-12T11:19:09+01:00</lastmod>
     <priority>0</priority>
   </url>
   
