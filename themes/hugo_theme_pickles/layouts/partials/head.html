@@ -7,13 +7,13 @@
   <meta name="twitter:title" content="{{ . }}" />
   {{ end }}
 
-  {{ with .Description | default .Site.Params.subtitle }}
+  {{ with .Description | default ($.Param "subtitle") }}
   <meta name="description" content="{{ . }}">
   <meta property="og:description" content="{{ . }}">
   <meta name="twitter:description" content="{{ . | truncate 200 }}">
   {{ end }}
 
-  <meta name="author" content="{{ .Site.Params.author }}"/>
+  <meta name="author" content="{{ $.Param "author" }}"/>
   <meta property="og:site_name" content="{{ .Site.Title }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
 
@@ -23,42 +23,36 @@
   {{ end }}
   <meta name="twitter:card" content="summary" />
 
-  {{ with .Site.Params.twitter }}
+  {{ with ($.Param "twitter") }}
   <meta name="twitter:site" content="@{{ . }}" />
   <meta name="twitter:creator" content="@{{ . }}" />
   {{ end }}
 
   {{ if .IsPage }}
   <meta property="og:type" content="article" />
-  {{ with .Site.Params.facebook }}
+  {{ with ($.Param "facebook") }}
   <meta property="og:article:author" content="https://facebook.com/{{ . }}" />
   {{ end }}
   {{ else }}
   <meta property="og:type" content="website" />
   {{ end }}
-  <!-- Hugo Version number -->
-  {{ .Hugo.Generator -}}
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "css/style.css" | absURL }}" />
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | absURL }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon-32x32.png" | absURL }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | absURL }}">
-  <link rel="manifest" href="{{ "/site.webmanifest" | absURL }}">
-  {{ if eq .URL "/" }}
-  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <!-- Hugo Version Number -->
+  {{ hugo.Generator -}}
+  
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" />
+  <!-- Custom css files as define in config.toml -->
+  {{ range ($.Param "custom_css") -}}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+  {{- end }}
+  {{- with ($.Param "favicon") }}
+  <link rel='icon' type='image/x-icon' href="{{ . | absURL }}" />
+  {{- end -}}
+  {{ if eq .RelPermalink "/" }}
+  {{ with .OutputFormats.Get "RSS" -}}
+  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+  {{ end -}}
   {{ end }}
-  <script type="text/javascript" src="{{ "js/bundle.js" | absURL }}"></script>
-
-  {{ if and .Site.GoogleAnalytics (not .Site.IsServer) }}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.GoogleAnalytics }}"></script>
-  <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', {{ .Site.GoogleAnalytics }});
-  </script>
-  {{ end }}
-
+  {{ if .Params.mathjax }}{{ partial "mathjax_support.html" . }}{{ end }}
+  <script type="text/javascript" src="{{ .Site.BaseURL }}js/bundle.js"></script>
   {{ partial "head_custom.html" . }}
 </head>
