@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shell on Marcin Chmiel</title>
@@ -16,8 +16,7 @@
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://marcinchmiel.com/articles/2017-12/redirecting-output-to-other-terminal/</guid>
-      <description>&lt;p&gt;There are many reasons one might want to see output from shell commands in another terminal emulator but it definitely has its uses. The other day it just so happended that I needed such a functionality. Without going into details I&amp;rsquo;m going to show you how to achieve such behaviour &amp;ndash; and more &amp;ndash; easily, by leveraging the fact that under the hood std(in|out|err) are just *nix file descriptors.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;There are many reasons one might want to see output from shell commands in another terminal emulator but it definitely has its uses. The other day it just so happended that I needed such a functionality. Without going into details I&amp;rsquo;m going to show you how to achieve such behaviour &amp;ndash; and more &amp;ndash; easily, by leveraging the fact that under the hood std(in|out|err) are just *nix file descriptors.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -27,9 +26,7 @@
       
       <guid>https://marcinchmiel.com/articles/2017-09/launching-terminal-emulator-in-current-working-directory-in-xmonad/</guid>
       <description>&lt;p&gt;Recently I got a bit fed up with my &lt;a href=&#34;http://xmonad.org&#34;&gt;XMonad&lt;/a&gt; configuration and decided to add some of the missing bits. After all I made the switch with &lt;em&gt;productivity&lt;/em&gt; in mind so it would be silly to endure even the slightest tradeoffs. If you don&amp;rsquo;t know what XMonad is &amp;ndash; it&amp;rsquo;s an &lt;em&gt;extremely&lt;/em&gt; customizable tiling window manager &amp;ndash; the default configuration is, however, pretty crude, so it doesn&amp;rsquo;t really make sense to switch if you&amp;rsquo;re not going to tweak it, even if just slightly.&lt;/p&gt;
-
-&lt;p&gt;To the point &amp;ndash; one of the things I was missing was the ability to open a new terminal emulator window in the same working directory as the one I had focused. I felt that existing solutions such as the &lt;a href=&#34;https://hackage.haskell.org/package/xmonad-contrib-0.13/docs/XMonad-Layout-WorkspaceDir.html&#34;&gt;WorkspaceDir&lt;/a&gt; extension were lacking and not exactly what I was looking for. And so I had to write one myself. Since I figured I couldn&amp;rsquo;t be the only one in need I decided I&amp;rsquo;d share my snippet.
-&lt;/p&gt;</description>
+&lt;p&gt;To the point &amp;ndash; one of the things I was missing was the ability to open a new terminal emulator window in the same working directory as the one I had focused. I felt that existing solutions such as the &lt;a href=&#34;https://hackage.haskell.org/package/xmonad-contrib-0.13/docs/XMonad-Layout-WorkspaceDir.html&#34;&gt;WorkspaceDir&lt;/a&gt; extension were lacking and not exactly what I was looking for. And so I had to write one myself. Since I figured I couldn&amp;rsquo;t be the only one in need I decided I&amp;rsquo;d share my snippet.&lt;/p&gt;</description>
     </item>
     
   </channel>

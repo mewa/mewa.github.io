@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kotlin on Marcin Chmiel</title>
@@ -17,12 +17,9 @@
       
       <guid>https://marcinchmiel.com/articles/2017-05/kotlin-with-dagger-android-basic-setup/</guid>
       <description>&lt;p&gt;Since &lt;code&gt;dagger-android&lt;/code&gt; is fairly new, every article on the Internet shows the &amp;ldquo;old&amp;rdquo; way of incorporating Dagger 2 into your Kotlin app, which involves writing some amounts of boilerplate code (well, so does any app using &lt;code&gt;dagger&lt;/code&gt;, but at least with the addition of &lt;code&gt;dagger-android&lt;/code&gt; you can try to cut it down a bit).&lt;/p&gt;
-
 &lt;p&gt;While for seasoned veterans it may be simple, I thought that, especially for less experienced developers, a fully working example could be useful.
 This is an example of the most basic setup using &lt;code&gt;dagger-android&lt;/code&gt; in Kotlin.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update (2018-02-24)&lt;/strong&gt;: When this guide was first written it was using &lt;code&gt;2.11-rc2&lt;/code&gt; version of &lt;code&gt;dagger&lt;/code&gt;. Dagger extensions for Android have evolved since and now it&amp;rsquo;s even easier to set things up. Below you can find the updated guide using version &lt;code&gt;2.12&lt;/code&gt;.
-&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;Update (2018-02-24)&lt;/strong&gt;: When this guide was first written it was using &lt;code&gt;2.11-rc2&lt;/code&gt; version of &lt;code&gt;dagger&lt;/code&gt;. Dagger extensions for Android have evolved since and now it&amp;rsquo;s even easier to set things up. Below you can find the updated guide using version &lt;code&gt;2.12&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

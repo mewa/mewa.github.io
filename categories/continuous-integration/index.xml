@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Continuous Integration on Marcin Chmiel</title>
@@ -18,13 +18,10 @@
       <guid>https://marcinchmiel.com/articles/2018-05/launch-a-ci-service-in-100-lines-of-clojure/</guid>
       <description>&lt;p&gt;There are many factors that contribute to the quality of the code we produce. Undoubtfully, adopting Continuous Integration
 is one of the biggest leaps one can make when closing the gap between &lt;em&gt;The Holy Grail Of Software Engineering&lt;/em&gt;.&lt;/p&gt;
-
 &lt;p&gt;Over time there have emerged quite a few CI services that make it easy to integrate changes to our code.
 Unless you&amp;rsquo;ve been living in vacuum for the past few years, you must&amp;rsquo;ve heard names like Jenkins, TravisCI or CircleCI.&lt;/p&gt;
-
 &lt;p&gt;But what if I told you, you could roll your own YetAnotherCI in just around 100 lines of Clojure? If this sounds interesting, make
-sure to follow along and ship YACI with us.
-&lt;/p&gt;</description>
+sure to follow along and ship YACI with us.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,8 +32,7 @@ sure to follow along and ship YACI with us.
       <guid>https://marcinchmiel.com/articles/2018-04/using-git-notes-to-improve-cd-workflow/</guid>
       <description>&lt;p&gt;Git is certainly one of the most widely used tools in software development industry &amp;ndash; it&amp;rsquo;s essential.
 However, many people forget about the many options it provides apart from serving simply as a VCS.
-I think &lt;code&gt;git notes&lt;/code&gt; is one of such commands, which can immensely improve your workflow &amp;ndash; let&amp;rsquo;s see for ourselves why you&amp;rsquo;d like to start using it.
-&lt;/p&gt;</description>
+I think &lt;code&gt;git notes&lt;/code&gt; is one of such commands, which can immensely improve your workflow &amp;ndash; let&amp;rsquo;s see for ourselves why you&amp;rsquo;d like to start using it.&lt;/p&gt;</description>
     </item>
     
   </channel>

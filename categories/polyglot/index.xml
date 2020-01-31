@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Polyglot on Marcin Chmiel</title>
+    <title>polyglot on Marcin Chmiel</title>
     <link>https://marcinchmiel.com/categories/polyglot/</link>
-    <description>Recent content in Polyglot on Marcin Chmiel</description>
+    <description>Recent content in polyglot on Marcin Chmiel</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 31 Jul 2017 00:00:00 +0000</lastBuildDate>
     
@@ -17,11 +17,8 @@
       
       <guid>https://marcinchmiel.com/articles/2017-07/polyglot-assembly-101/</guid>
       <description>&lt;p&gt;As promised in my &lt;a href=&#34;https://marcinchmiel.com/articles/2017-05/the-somewhat-lengthy-hello-world-post/&#34;&gt;somewhat lengthy &amp;ldquo;Hello World&amp;rdquo; post&lt;/a&gt;, although much later than intended, I finally got down to writing a follow-up post.&lt;/p&gt;
-
 &lt;p&gt;I remember one of the very first lectures during my uni course &amp;ndash; when &lt;code&gt;assembly&lt;/code&gt; language was being introduced. Nothing too deep, really. However, I recall a statement being made, that probably still lives in the minds of the many that heard it (and perhaps even more that didn&amp;rsquo;t). Namely &amp;ndash; that &lt;code&gt;assembly&lt;/code&gt; code is not &lt;em&gt;portable&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;In this post we&amp;rsquo;re going to take a look at how misleading that statement is and explore writing &lt;strong&gt;polyglot assembly code&lt;/strong&gt;.
-&lt;/p&gt;</description>
+&lt;p&gt;In this post we&amp;rsquo;re going to take a look at how misleading that statement is and explore writing &lt;strong&gt;polyglot assembly code&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

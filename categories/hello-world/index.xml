@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hello World on Marcin Chmiel</title>
+    <title>Hello world on Marcin Chmiel</title>
     <link>https://marcinchmiel.com/categories/hello-world/</link>
-    <description>Recent content in Hello World on Marcin Chmiel</description>
+    <description>Recent content in Hello world on Marcin Chmiel</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 14 May 2017 00:00:00 +0000</lastBuildDate>
     
@@ -17,9 +17,7 @@
       
       <guid>https://marcinchmiel.com/articles/2017-05/the-somewhat-lengthy-hello-world-post/</guid>
       <description>&lt;p&gt;It is a long honored tradition for IT texts to start with these famous words. Over the years, the languages have evolved, so did the paradigms by which we write our code &amp;ndash; yet almost every book or tutorial, on any language, still begins with this simple piece of &lt;em&gt;software&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Since I don&amp;rsquo;t want to stir things up and be some kind of a rebel this blog shall not be different &amp;ndash; in this particular case.
-&lt;/p&gt;</description>
+&lt;p&gt;Since I don&amp;rsquo;t want to stir things up and be some kind of a rebel this blog shall not be different &amp;ndash; in this particular case.&lt;/p&gt;</description>
     </item>
     
   </channel>

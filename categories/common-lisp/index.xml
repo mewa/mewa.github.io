@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Common Lisp on Marcin Chmiel</title>
@@ -17,7 +17,6 @@
       
       <guid>https://marcinchmiel.com/articles/2017-10/haskell-style-lambdas-in-lisp/</guid>
       <description>&lt;p&gt;Recently I was toying around with Lisp a bit and thought I&amp;rsquo;d share some insights.&lt;/p&gt;
-
 &lt;p&gt;As you may or may not know programming in Lisps is somewhat different from the average programming languages you&amp;rsquo;re used to. In what way, you might ask &amp;ndash; and no, I &lt;em&gt;don&amp;rsquo;t&lt;/em&gt; mean being swarmed up with parenthesis (besides syntax should be the least concern when picking &lt;em&gt;The Right Tool&lt;/em&gt;). Here&amp;rsquo;s why.&lt;/p&gt;</description>
     </item>
     

@@ -1,9 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://marcinchmiel.com/articles/2019-01/introducting-authmagic.io---a-passwordless-authentication-service/</loc>
+    <loc>https://marcinchmiel.com/categories/aws/</loc>
+    <lastmod>2020-01-31T01:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/</loc>
+    <lastmod>2020-01-31T01:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/gcp/</loc>
+    <lastmod>2020-01-31T01:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/kubernetes/</loc>
+    <lastmod>2020-01-31T01:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/</loc>
+    <lastmod>2020-01-31T01:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/posts/</loc>
+    <lastmod>2020-01-31T01:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/articles/2020-01/things-to-consider-when-choosing-nodes-for-your-kubernetes-cluster/</loc>
+    <lastmod>2020-01-31T01:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/announcement/</loc>
+    <lastmod>2019-01-12T11:19:09+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/articles/2019-01/introducting-authmagic.io-a-passwordless-authentication-service/</loc>
     <lastmod>2019-01-12T11:19:09+01:00</lastmod>
   </url>
   
@@ -13,8 +53,38 @@
   </url>
   
   <url>
+    <loc>https://marcinchmiel.com/categories/relational-databases/</loc>
+    <lastmod>2018-12-20T16:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/software-engineering/</loc>
+    <lastmod>2018-12-20T16:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/clojure/</loc>
+    <lastmod>2018-05-02T02:18:29+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/continuous-deployment/</loc>
+    <lastmod>2018-05-02T02:18:29+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/continuous-integration/</loc>
+    <lastmod>2018-05-02T02:18:29+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marcinchmiel.com/articles/2018-05/launch-a-ci-service-in-100-lines-of-clojure/</loc>
     <lastmod>2018-05-02T02:18:29+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/git/</loc>
+    <lastmod>2018-04-12T17:34:29+02:00</lastmod>
   </url>
   
   <url>
@@ -28,6 +98,21 @@
   </url>
   
   <url>
+    <loc>https://marcinchmiel.com/categories/shell/</loc>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/common-lisp/</loc>
+    <lastmod>2017-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/haskell/</loc>
+    <lastmod>2017-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marcinchmiel.com/articles/2017-10/haskell-style-lambdas-in-lisp/</loc>
     <lastmod>2017-10-13T00:00:00+00:00</lastmod>
   </url>
@@ -38,8 +123,38 @@
   </url>
   
   <url>
+    <loc>https://marcinchmiel.com/categories/xmonad/</loc>
+    <lastmod>2017-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/polyglot/</loc>
+    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marcinchmiel.com/articles/2017-07/polyglot-assembly-101/</loc>
     <lastmod>2017-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/x86-assembly/</loc>
+    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/android/</loc>
+    <lastmod>2017-05-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/dagger-2/</loc>
+    <lastmod>2017-05-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/kotlin/</loc>
+    <lastmod>2017-05-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -48,134 +163,13 @@
   </url>
   
   <url>
-    <loc>https://marcinchmiel.com/articles/2017-05/the-somewhat-lengthy-hello-world-post/</loc>
-    <lastmod>2017-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/android/</loc>
-    <lastmod>2017-05-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/announcement/</loc>
-    <lastmod>2019-01-12T11:19:09+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/</loc>
-    <lastmod>2017-05-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/clojure/</loc>
-    <lastmod>2018-05-02T02:18:29+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/common-lisp/</loc>
-    <lastmod>2017-10-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/continuous-deployment/</loc>
-    <lastmod>2018-05-02T02:18:29+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/continuous-integration/</loc>
-    <lastmod>2018-05-02T02:18:29+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/dagger-2/</loc>
-    <lastmod>2017-05-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/git/</loc>
-    <lastmod>2018-04-12T17:34:29+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/haskell/</loc>
-    <lastmod>2017-10-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://marcinchmiel.com/categories/hello-world/</loc>
     <lastmod>2017-05-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://marcinchmiel.com/categories/kotlin/</loc>
-    <lastmod>2017-05-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/kubernetes/</loc>
-    <lastmod>2018-05-02T02:18:29+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/</loc>
-    <lastmod>2019-01-12T11:19:09+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/polyglot/</loc>
-    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/posts/</loc>
-    <lastmod>2019-01-12T11:19:09+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/relational-databases/</loc>
-    <lastmod>2018-12-20T16:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/shell/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/software-engineering/</loc>
-    <lastmod>2018-12-20T16:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/x86-assembly/</loc>
-    <lastmod>2017-07-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/xmonad/</loc>
-    <lastmod>2017-09-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://marcinchmiel.com/articles/2017-05/the-somewhat-lengthy-hello-world-post/</loc>
+    <lastmod>2017-05-14T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>
