@@ -9,7 +9,7 @@ pygmentsStyle = "github"
 
 relativeURLs = true
 
-GoogleAnalytics = "UA-99152208-1"
+googleAnalytics = "UA-99152208-1"
 
 [taxonomies]
     # Optional. Use if you want tags and lists.
