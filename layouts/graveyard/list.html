@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/graveyard.min.css" />
+<title>Graveyard by marcinchmiel.com</title>
+<style>
+ /* h2 { margin-top: 48px; } */
+</style>
+</head>
+
+<body>
+    <div class="container-sm">
+    <div class="container-sm" style="max-width: 768px;">
+        <h1 class="display-1"><strong>Graveyard&#134;</strong></h1>
+        <h6 style="position: relative; top: -26px; left: 72px; letter-spacing: 2.5px;">marcinchmiel.com<h6>
+        <blockquote class="blockquote">Non omnis moriar. Exegi monumentum<sup>1</sup>.</blockquote>
+        <p class="small"><sup>1</sup> or, actually, just many abandoned projects and GitHub repos</p>
+
+        <hr class="my-2"/>
+
+        <div class="my-5 text-center">
+            <p class="lead my-5">This is to testify I was actually really fluffin' busy.</p>
+
+            <p class="my-5">In loving memory of all the products I never shipped.</p>
+        </div>
+        <div class="py-5">
+            {{ range .Pages }}
+            <div style="margin-bottom: 128px;">
+                {{ .Content }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
