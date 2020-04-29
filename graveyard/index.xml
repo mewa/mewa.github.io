@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graveyard on Marcin Chmiel</title>
+    <link>https://marcinchmiel.com/graveyard/</link>
+    <description>Recent content in Graveyard on Marcin Chmiel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 29 Apr 2020 00:39:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marcinchmiel.com/graveyard/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Graveyard</title>
+      <link>https://marcinchmiel.com/graveyard/scrape/</link>
+      <pubDate>Thu, 20 Feb 2020 00:39:00 +0000</pubDate>
+      
+      <guid>https://marcinchmiel.com/graveyard/scrape/</guid>
+      <description>Automated web scraping service 2018&amp;ndash;2020 thedjinn.io was a service that allowed users to select CSS selectors on a website and harvest data and feed them into online charts.</description>
+    </item>
+    
+    <item>
+      <title>Graveyard</title>
+      <link>https://marcinchmiel.com/graveyard/magic/</link>
+      <pubDate>Sun, 02 Feb 2020 00:39:00 +0000</pubDate>
+      
+      <guid>https://marcinchmiel.com/graveyard/magic/</guid>
+      <description>MLaaS, or Magic Links as a Service 2019&amp;ndash;2020 authmagic.io was a service enabled their users to quickly implement Slack-like magic login links. And a number of other magic (auth) things.</description>
+    </item>
+    
+    <item>
+      <title>Distributed highly-available cron service</title>
+      <link>https://marcinchmiel.com/graveyard/cron/</link>
+      <pubDate>Sun, 29 Dec 2019 00:39:00 +0000</pubDate>
+      
+      <guid>https://marcinchmiel.com/graveyard/cron/</guid>
+      <description>Distributed highly-available cron service 2018&amp;ndash;2019 Based off of etcd, this was meant to be a highly available, distributed open-source cron implementation.
+Initially based on a standalone raft algorithm implementation.</description>
+    </item>
+    
+    <item>
+      <title>Graveyard</title>
+      <link>https://marcinchmiel.com/graveyard/flights/</link>
+      <pubDate>Mon, 02 Dec 2019 00:39:00 +0000</pubDate>
+      
+      <guid>https://marcinchmiel.com/graveyard/flights/</guid>
+      <description>cheapestflights.world 2017&amp;ndash;2019 Born out of passion for affordable traveling, cheapestflights.world was a mailing list where my co-founder and I shared some crazy deals we managed to find.</description>
+    </item>
+    
+  </channel>
+</rss>
