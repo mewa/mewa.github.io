@@ -3,6 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marcinchmiel.com/categories/aws/</loc>
+    <lastmod>2020-08-23T22:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/azure/</loc>
+    <lastmod>2020-08-23T22:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/</loc>
+    <lastmod>2020-08-23T22:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/digitalocean/</loc>
+    <lastmod>2020-08-23T22:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/gcp/</loc>
+    <lastmod>2020-08-23T22:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/heroku/</loc>
+    <lastmod>2020-08-23T22:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/</loc>
+    <lastmod>2020-08-23T22:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/netlify/</loc>
+    <lastmod>2020-08-23T22:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/posts/</loc>
+    <lastmod>2020-08-23T22:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/articles/2020-08/where-to-host-your-project-as-a-solo-founder/</loc>
+    <lastmod>2020-08-23T22:43:55+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marcinchmiel.com/graveyard/</loc>
     <lastmod>2020-04-29T00:39:00+00:00</lastmod>
   </url>
@@ -13,37 +63,12 @@
   </url>
   
   <url>
-    <loc>https://marcinchmiel.com/</loc>
-    <lastmod>2020-02-20T00:39:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://marcinchmiel.com/graveyard/magic/</loc>
     <lastmod>2020-02-02T00:39:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marcinchmiel.com/categories/aws/</loc>
-    <lastmod>2020-01-31T01:43:55+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/</loc>
-    <lastmod>2020-01-31T01:43:55+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/gcp/</loc>
-    <lastmod>2020-01-31T01:43:55+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://marcinchmiel.com/categories/kubernetes/</loc>
-    <lastmod>2020-01-31T01:43:55+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/posts/</loc>
     <lastmod>2020-01-31T01:43:55+01:00</lastmod>
   </url>
   

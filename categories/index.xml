@@ -5,7 +5,7 @@
     <link>https://marcinchmiel.com/categories/</link>
     <description>Recent content in Categories on Marcin Chmiel</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 31 Jan 2020 01:43:55 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2020 22:43:55 +0100</lastBuildDate>
     
 	<atom:link href="https://marcinchmiel.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,18 +13,54 @@
     <item>
       <title>AWS</title>
       <link>https://marcinchmiel.com/categories/aws/</link>
-      <pubDate>Fri, 31 Jan 2020 01:43:55 +0100</pubDate>
+      <pubDate>Sun, 23 Aug 2020 22:43:55 +0100</pubDate>
       
       <guid>https://marcinchmiel.com/categories/aws/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Azure</title>
+      <link>https://marcinchmiel.com/categories/azure/</link>
+      <pubDate>Sun, 23 Aug 2020 22:43:55 +0100</pubDate>
+      
+      <guid>https://marcinchmiel.com/categories/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DigitalOcean</title>
+      <link>https://marcinchmiel.com/categories/digitalocean/</link>
+      <pubDate>Sun, 23 Aug 2020 22:43:55 +0100</pubDate>
+      
+      <guid>https://marcinchmiel.com/categories/digitalocean/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>GCP</title>
       <link>https://marcinchmiel.com/categories/gcp/</link>
-      <pubDate>Fri, 31 Jan 2020 01:43:55 +0100</pubDate>
+      <pubDate>Sun, 23 Aug 2020 22:43:55 +0100</pubDate>
       
       <guid>https://marcinchmiel.com/categories/gcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heroku</title>
+      <link>https://marcinchmiel.com/categories/heroku/</link>
+      <pubDate>Sun, 23 Aug 2020 22:43:55 +0100</pubDate>
+      
+      <guid>https://marcinchmiel.com/categories/heroku/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Netlify</title>
+      <link>https://marcinchmiel.com/categories/netlify/</link>
+      <pubDate>Sun, 23 Aug 2020 22:43:55 +0100</pubDate>
+      
+      <guid>https://marcinchmiel.com/categories/netlify/</guid>
       <description></description>
     </item>
     
