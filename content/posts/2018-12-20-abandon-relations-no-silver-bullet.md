@@ -43,7 +43,7 @@ I'm a huge fan of engineering. In this industry probably the vast majority of us
 
 It's the process of applying *knowledge* to a problem. It's about making informed choices. It's about *solving* your specific problem instance given particular constraints.
 
-I'm also a huge fan of Haskell and yet, if I had to deliver a product quickly Haskell would never be my first choice. Because Haskell is about solving puzzles and not problems. It also has many other properties that would hinder my time-to-market. Therefore I'd decide not to use it -- I'd much rather use a Lisp, due to its flexibility.
+I'm also a huge fan of Haskell and yet, if I had to deliver a product quickly Haskell would never be my first choice. Because Haskell is about solving puzzles and not problems. It also has many other properties that would hinder my time-to-market. Therefore I'd decide not to use it -- I'd much rather use a Lisp, due to its flexibility[^6].
 
 Does it make more sense what I wrote earlier that you don't have to pick sides in the SQL vs NoSQL battle?
 
@@ -51,10 +51,11 @@ Because why not use both? You could have part of your system require extreme per
 
 The key point is that you should stop and think before choosing blindly a solution -- be it SQL or NoSQL or else -- and apply KISS principle to anything you do. I think [this article by Uncle Bob](https://blog.cleancoder.com/uncle-bob/2012/05/15/NODB.html) sums it up pretty nicely.
 
-Remember -- there are no silver bullets -- apply engineering to your input.
+So, remember to always apply engineering to your input -- regardless of the solution you eventually end up with.
 
 [^1]: An actual example of a "great" idea presented by one of the Oracle people
 [^2]: Also an actual example of a "great" idea given -- at this point I was rendered speechless
 [^3]: I made it up and exaggerated a bit to support my claim. But it's not *that* far-fetched if you asked the *O* people
 [^4]: Used for brevity: as opposed to NoSQL databases
 [^5]: Of course this goes the other way round too -- i.e. when you want to introduce relations into a non-relational database
+[^6]: Just an example, I'm fully aware Lisps have a similar problem that Haskell does in terms of hiring
