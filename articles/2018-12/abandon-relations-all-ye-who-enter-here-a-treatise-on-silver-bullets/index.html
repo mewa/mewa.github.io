@@ -112,11 +112,11 @@ Don&rsquo;t get me wrong, Mongo has its flaws &ndash; but on the other hand so d
 <p>You can have an algorithm that does something optimally in terms of time complexity, or you can have an algorithm that does something optimally in terms of space complexity, but usually not both. Which one you choose to optimize for should be your informed choice. This brings us to the next topic &ndash; engineering.</p>
 <p>I&rsquo;m a huge fan of engineering. In this industry probably the vast majority of us are engineers &ndash; and yet we very often tend to forget what engineering is all about. So what is engineering one might ask?</p>
 <p>It&rsquo;s the process of applying <em>knowledge</em> to a problem. It&rsquo;s about making informed choices. It&rsquo;s about <em>solving</em> your specific problem instance given particular constraints.</p>
-<p>I&rsquo;m also a huge fan of Haskell and yet, if I had to deliver a product quickly Haskell would never be my first choice. Because Haskell is about solving puzzles and not problems. It also has many other properties that would hinder my time-to-market. Therefore I&rsquo;d decide not to use it &ndash; I&rsquo;d much rather use a Lisp, due to its flexibility.</p>
+<p>I&rsquo;m also a huge fan of Haskell and yet, if I had to deliver a product quickly Haskell would never be my first choice. Because Haskell is about solving puzzles and not problems. It also has many other properties that would hinder my time-to-market. Therefore I&rsquo;d decide not to use it &ndash; I&rsquo;d much rather use a Lisp, due to its flexibility<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>.</p>
 <p>Does it make more sense what I wrote earlier that you don&rsquo;t have to pick sides in the SQL vs NoSQL battle?</p>
 <p>Because why not use both? You could have part of your system require extreme performance that no SQL database would ever deliver, and then you could normalize the data for other purposes and feed it into a RDBMS and perform some analytics. If your <em>use cases</em> dictate such properties then it&rsquo;s all for the best. Choosing just one piece of the equation will leave you with one variable missing.</p>
 <p>The key point is that you should stop and think before choosing blindly a solution &ndash; be it SQL or NoSQL or else &ndash; and apply KISS principle to anything you do. I think <a href="https://blog.cleancoder.com/uncle-bob/2012/05/15/NODB.html">this article by Uncle Bob</a> sums it up pretty nicely.</p>
-<p>Remember &ndash; there are no silver bullets &ndash; apply engineering to your input.</p>
+<p>So, remember to always apply engineering to your input &ndash; regardless of the solution you eventually end up with.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -134,6 +134,9 @@ Don&rsquo;t get me wrong, Mongo has its flaws &ndash; but on the other hand so d
 </li>
 <li id="fn:5" role="doc-endnote">
 <p>Of course this goes the other way round too &ndash; i.e. when you want to introduce relations into a non-relational database <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Just an example, I&rsquo;m fully aware Lisps have a similar problem that Haskell does in terms of hiring <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
