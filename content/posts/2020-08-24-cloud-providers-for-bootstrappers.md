@@ -145,7 +145,7 @@ can fit in any of these categories -- from basic VMs to platforms
 such as the AWS Elastic Beanstalk, to serverless functions.
 
 This diversity is both a boon and a curse -- while you won't ever need
-to leave a cloud platform once you choose it, there's a good chance
+to leave a cloud provider once you choose it, there's a good chance
 you'll find a significant portion of your time navigating around this
 complexity, especially in the beginning.
 
@@ -154,9 +154,9 @@ of services, tailored to specific use-cases, most of which you'll
 never use.
 
 That being said, all of them offer discounts for committed usage of
-their VMs -- something that is lacking in the offering of other cloud
-providers. If you can decide how much resources you're going to need
-in advance this can bring you considerable savings.
+their VMs -- something that is lacking in the offering of the other
+cloud providers. If you can decide how much resources you're going to
+need in advance this can bring you considerable savings.
 
 ## Serverless
 
@@ -178,4 +178,6 @@ platforms will diminish.
 
 Thanks for tuning in and I hope you are now better equipped to choose
 the provider for your next project! As always, feel free to leave a
-comment on [Twitter](https://twitter.com/marcin_chm).
+comment on
+[Twitter](https://twitter.com/intent/user?screen_name=marcin_chm), my
+DMs are open as well.
