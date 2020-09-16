@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Using git notes to improve CD workflow</title>
-  <meta property="og:title" content="Using git notes to improve CD workflow" />
-  <meta name="twitter:title" content="Using git notes to improve CD workflow" />
+  <title>Using git notes to improve workflow</title>
+  <meta property="og:title" content="Using git notes to improve workflow" />
+  <meta name="twitter:title" content="Using git notes to improve workflow" />
   
 
   
@@ -17,7 +17,7 @@
 
   <meta name="author" content="Marcin Chmiel"/>
   <meta property="og:site_name" content="Marcin Chmiel" />
-  <meta property="og:url" content="https://marcinchmiel.com/articles/2018-04/using-git-notes-to-improve-cd-workflow/" />
+  <meta property="og:url" content="https://marcinchmiel.com/articles/2018-04/using-git-notes-to-improve-workflow/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -45,12 +45,13 @@ if (!doNotTrack) {
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
-  <meta property="og:title" content="Using git notes to improve CD workflow" />
-<meta property="og:description" content="Git is certainly one of the most widely used tools in software development industry &ndash; it&rsquo;s essential.
-However, many people forget about the many options it provides apart from serving simply as a VCS.
-I think git notes is one of such commands, which can immensely improve your workflow &ndash; let&rsquo;s see for ourselves why you&rsquo;d like to start using it." />
+  <meta property="og:title" content="Using git notes to improve workflow" />
+<meta property="og:description" content="TL;DR
+There used to be a post about using git notes in a hypothetical CD
+scenario, but since I thought it wasn&rsquo;t providing any value anymore I
+decided to rake it and instead I&rsquo;ve limited it to describing git notes features and linking to the official documentation." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://marcinchmiel.com/articles/2018-04/using-git-notes-to-improve-cd-workflow/" />
+<meta property="og:url" content="https://marcinchmiel.com/articles/2018-04/using-git-notes-to-improve-workflow/" />
 <meta property="article:published_time" content="2018-04-12T17:34:29+02:00" />
 <meta property="article:modified_time" content="2018-04-12T17:34:29+02:00" />
 
@@ -83,7 +84,7 @@ I think git notes is one of such commands, which can immensely improve your work
 
 <article class="p-article">
   <header>
-    <h1>Using git notes to improve CD workflow</h1>
+    <h1>Using git notes to improve workflow</h1>
     <div>
       <div class="c-time">
         Posted on
@@ -96,89 +97,21 @@ I think git notes is one of such commands, which can immensely improve your work
   </header>
   
   <section id="js-article" class="p-article__body">
-    <p>Git is certainly one of the most widely used tools in software development industry &ndash; it&rsquo;s essential.
-However, many people forget about the many options it provides apart from serving simply as a VCS.
-I think <code>git notes</code> is one of such commands, which can immensely improve your workflow &ndash; let&rsquo;s see for ourselves why you&rsquo;d like to start using it.</p>
-<p>I&rsquo;m not going to try different words, since in this case <a href="https://git-scm.com/docs/git-notes">git docs</a> covers it nicely, in short:</p>
+    <h2 id="tldr">TL;DR</h2>
+<p>There used to be a post about using git notes in a hypothetical CD
+scenario, but since I thought it wasn&rsquo;t providing any value anymore I
+decided to rake it and instead I&rsquo;ve limited it to describing <code>git notes</code> features and linking to the <a href="https://git-scm.com/docs/git-notes">official documentation</a>.</p>
 <blockquote>
 <p>git-notes</p>
 <p>Adds, removes, or reads notes attached to objects, without touching the objects themselves.</p>
 </blockquote>
-<p>The key part we&rsquo;re about to exploit is <em>without touching objects</em>.</p>
-<p>But first, let&rsquo;s begin with the following scenario.</p>
-<h3 id="the-scenario">The scenario</h3>
-<p>We&rsquo;re running a company <code>example.com</code> which has two services:</p>
-<ul>
-<li>a frontend service, located in a GitHub repository <code>example.com/frontend</code></li>
-<li>and a backend service, located in a GitHub repository <code>example.com/backend</code>.</li>
-</ul>
-<p>Since <code>frontend</code> and <code>backend</code> depend on each other, we&rsquo;ll have another repository, <code>example.com/deploy</code> which covers
-end-to-end tests as well as manages configuration of each service (it also stores each service repository as a git submodule).</p>
-<p>Each repository has two branches:</p>
-<ul>
-<li>master</li>
-<li>and production</li>
-</ul>
-<p>On <code>master</code> we will find the latest code, it may contain bugs.</p>
-<p>We&rsquo;re doing serious business obviously, so it&rsquo;s vital for our customers to only access code that has been tested thoroughly.
-Hence we&rsquo;re setting up a CI service to ensure the quality of our product. Commits to <code>master</code> automatically trigger our CI service,
-which then tests and builds our code &ndash; and if it succeeds it commits information about build artifacts, so that they can be retrieved easily
-in the following steps, and merges the changes to <code>production</code>.</p>
-<p>Naturally, changes flow further to <code>example.com/deploy</code> repository where they are integrated and prepared for delivery/deployment. Thanks to the fact
-that we have saved the build artifacts, we don&rsquo;t have to rebuild them again (that would&rsquo;ve been a waste, right?) and all that&rsquo;s left is configuration
-and testing.</p>
-<p>Now, this is great, because we have the confidence to push our code further in in our deployment pipeline. Or do we?</p>
-<p>As it turns out, not so much. This approach revolves aroud the assumption that the developers will push their code to the <code>master</code> branch.
-But what happens if they don&rsquo;t? Right now it&rsquo;s entirely possible &ndash; whether by mistake or deliberately &ndash; to skip tests and possibly taint our production
-environment by simply pushing directly to <code>production</code> branch.</p>
-<p>Since we&rsquo;re committed to delivering the highest quality product, even if it sounds improbable, we have to take measures against it.
-Luckily, we can just protect our <code>production</code> branch and make GitHub enforce for us that only tested changes can be merged in.</p>
-<p>However, we&rsquo;re hitting another problem. Previously, after a successfult build we were committing information about the build artifacts to production branch.
-Well, we cannot do that now, since doing so would mean we&rsquo;re introducing <em>untested</em> changes that cannot be merged into <code>production</code> &mdash; even
-if we know for a fact it&rsquo;s just metadata. So what can we do without resorting to some hacks in CI code and/or repeating correct builds?</p>
-<h3 id="git-notes-revisited">git notes revisited</h3>
-<p>This is where <code>git notes</code> command comes in handy. Just as I have already mentioned it lets us attach objects (data) without modifying our commit hash.
-For us, this means that we won&rsquo;t have to test the changes again and they&rsquo;re safe to merge into <code>production</code>. A quick win.</p>
-<p>Let&rsquo;s add our artifacts info:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mewa@sea:backend$ cat artifacts.json
-<span style="color:#000;font-weight:bold">{</span>
-    <span style="color:#d14">&#34;name&#34;</span>: <span style="color:#d14">&#34;backend&#34;</span>
-    <span style="color:#d14">&#34;url&#34;</span>: <span style="color:#d14">&#34;https://example.com/artifacts/1234&#34;</span>
-<span style="color:#000;font-weight:bold">}</span>
-mewa@sea:backend$ git notes --ref build-artifacts add -fF artifacts.json
-</code></pre></div><p>Let&rsquo;s verify we actually added contents of <code>artifacts.json</code> as our note:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mewa@sea:backend$ git notes --ref build-artifacts show
-<span style="color:#000;font-weight:bold">{</span>
-    <span style="color:#d14">&#34;name&#34;</span>: <span style="color:#d14">&#34;backend&#34;</span>
-    <span style="color:#d14">&#34;url&#34;</span>: <span style="color:#d14">&#34;https://example.com/artifacts/1234&#34;</span>
-<span style="color:#000;font-weight:bold">}</span>
-</code></pre></div><p>It&rsquo;s there. Time to push changes to upstream.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mewa@sea:backend$ git push -f origin refs/notes/build-artifacts
-</code></pre></div><p>Let&rsquo;s retrieve the notes in our <code>example.com/deploy</code> repository. We have two submodules:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mewa@sea:deploy$ tree
-.
-├── backend
-└── frontend
-</code></pre></div><p>By default git doesn&rsquo;t fetch notes, so we&rsquo;ll have to do it ourselves.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mewa@sea:deploy$ <span style="color:#0086b3">cd</span> backend
-mewa@sea:deploy/backend$ git fetch origin refs/notes/build-artifacts:refs/notes/build-artifacts
-</code></pre></div><p>We now have our notes available. Notice, we only fetched notes for ref <code>build-artifacts</code> &ndash; if we wanted, we could&rsquo;ve just pulled all the notes by
-specifying <code>refs/notes/*</code> instead of <code>build-artifacts</code> specifically.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mewa@sea:deploy/backend$ git notes --ref build-artifacts show
-<span style="color:#000;font-weight:bold">{</span>
-    <span style="color:#d14">&#34;name&#34;</span>: <span style="color:#d14">&#34;backend&#34;</span>
-    <span style="color:#d14">&#34;url&#34;</span>: <span style="color:#d14">&#34;https://example.com/artifacts/1234&#34;</span>
-<span style="color:#000;font-weight:bold">}</span>
-
-</code></pre></div><p>That&rsquo;s great, our pipeline is reusing artifacts, so changes are delivered faster!</p>
-<p>There is one caveat, however:</p>
-<p>git notes are separate refs that can be overwritten or even deleted. This means that critical data shouldn&rsquo;t be stored in them.</p>
-<p>Information about build artifacts, however, is not critical, because it can be easily reproduced through building our production branch again.</p>
-<p>Then again, in a typical scenario such a thing should never happen.</p>
-<h3 id="wrapping-up">Wrapping up</h3>
-<p>Git is full of different features, many of them aren&rsquo;t used so widely. I hope this article showed you a valid use-case for <code>git notes</code>, or even
-better &ndash; you found your own usecase while reading it!</p>
-<p>Why don&rsquo;t you share what are <em>your</em> favourite git tricks?</p>
+<p>In practice this means we can give our commit a lengthier description,
+if we want to bring something to the attention of our readers. Explain
+the rationale behind it. Add some other important, well, notes. And
+while we could just amend the commit changing the commit message,
+using <code>git notes</code> we&rsquo;re able to provide that additional context
+without altering the commit itself &ndash; which is important if your
+scenario doesn&rsquo;t allow for rewriting git history.</p>
   </section>
   <footer>
     
