@@ -3,17 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marcinchmiel.com/categories/</loc>
+    <lastmod>2020-10-18T01:33:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/ffmpeg/</loc>
+    <lastmod>2020-10-18T01:33:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/</loc>
+    <lastmod>2020-10-18T01:33:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/posts/</loc>
+    <lastmod>2020-10-18T01:33:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/transcoding/</loc>
+    <lastmod>2020-10-18T01:33:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/video-coding/</loc>
+    <lastmod>2020-10-18T01:33:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/articles/2020-10/why-you-should-force-fixed-closed-gops-and-how-to-do-it-in-ffmpeg/</loc>
+    <lastmod>2020-10-18T01:33:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/x264/</loc>
+    <lastmod>2020-10-18T01:33:55+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marcinchmiel.com/categories/aws/</loc>
     <lastmod>2020-08-23T22:43:55+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://marcinchmiel.com/categories/azure/</loc>
-    <lastmod>2020-08-23T22:43:55+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/</loc>
     <lastmod>2020-08-23T22:43:55+01:00</lastmod>
   </url>
   
@@ -33,17 +68,7 @@
   </url>
   
   <url>
-    <loc>https://marcinchmiel.com/</loc>
-    <lastmod>2020-08-23T22:43:55+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://marcinchmiel.com/categories/netlify/</loc>
-    <lastmod>2020-08-23T22:43:55+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/posts/</loc>
     <lastmod>2020-08-23T22:43:55+01:00</lastmod>
   </url>
   
