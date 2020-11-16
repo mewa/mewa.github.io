@@ -5,10 +5,46 @@
     <link>https://marcinchmiel.com/categories/</link>
     <description>Recent content in Categories on Marcin Chmiel</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 18 Oct 2020 01:33:55 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2020 22:30:00 +0100</lastBuildDate>
     
 	<atom:link href="https://marcinchmiel.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AWS</title>
+      <link>https://marcinchmiel.com/categories/aws/</link>
+      <pubDate>Thu, 12 Nov 2020 22:30:00 +0100</pubDate>
+      
+      <guid>https://marcinchmiel.com/categories/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ec2</title>
+      <link>https://marcinchmiel.com/categories/ec2/</link>
+      <pubDate>Thu, 12 Nov 2020 22:30:00 +0100</pubDate>
+      
+      <guid>https://marcinchmiel.com/categories/ec2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iam</title>
+      <link>https://marcinchmiel.com/categories/iam/</link>
+      <pubDate>Thu, 12 Nov 2020 22:30:00 +0100</pubDate>
+      
+      <guid>https://marcinchmiel.com/categories/iam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>performance</title>
+      <link>https://marcinchmiel.com/categories/performance/</link>
+      <pubDate>Thu, 12 Nov 2020 22:30:00 +0100</pubDate>
+      
+      <guid>https://marcinchmiel.com/categories/performance/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ffmpeg</title>
@@ -43,15 +79,6 @@
       <pubDate>Sun, 18 Oct 2020 01:33:55 +0100</pubDate>
       
       <guid>https://marcinchmiel.com/categories/x264/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AWS</title>
-      <link>https://marcinchmiel.com/categories/aws/</link>
-      <pubDate>Sun, 23 Aug 2020 22:43:55 +0100</pubDate>
-      
-      <guid>https://marcinchmiel.com/categories/aws/</guid>
       <description></description>
     </item>
     

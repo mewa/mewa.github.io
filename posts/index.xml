@@ -5,10 +5,21 @@
     <link>https://marcinchmiel.com/posts/</link>
     <description>Recent content in Posts on Marcin Chmiel</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 18 Oct 2020 01:33:55 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2020 22:30:00 +0100</lastBuildDate>
     
 	<atom:link href="https://marcinchmiel.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A super-quick way to speed up your containers on AWS</title>
+      <link>https://marcinchmiel.com/articles/2020-11/a-super-quick-way-to-speed-up-your-containers-on-aws/</link>
+      <pubDate>Thu, 12 Nov 2020 22:30:00 +0100</pubDate>
+      
+      <guid>https://marcinchmiel.com/articles/2020-11/a-super-quick-way-to-speed-up-your-containers-on-aws/</guid>
+      <description>We all hate it when it happens. You know what I&amp;rsquo;m talking about &amp;ndash; your app works perfectly fine locally, you deploy it&amp;hellip; and then bam!
+In my case, I hit a terrible, terrible performance bottleneck.
+It all started when I was setting up a whole new service from scratch. A pretty standard container deployment, running on EC2 instances. Nothing too fancy, and it seemed everything went smooth. First version deployed.</description>
+    </item>
     
     <item>
       <title>Why you should force fixed &amp; closed GOPs (and how to do it in ffmpeg)</title>

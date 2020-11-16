@@ -3,22 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://marcinchmiel.com/categories/</loc>
-    <lastmod>2020-10-18T01:33:55+01:00</lastmod>
+    <loc>https://marcinchmiel.com/articles/2020-11/a-super-quick-way-to-speed-up-your-containers-on-aws/</loc>
+    <lastmod>2020-11-12T22:30:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marcinchmiel.com/categories/ffmpeg/</loc>
-    <lastmod>2020-10-18T01:33:55+01:00</lastmod>
+    <loc>https://marcinchmiel.com/categories/aws/</loc>
+    <lastmod>2020-11-12T22:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/</loc>
+    <lastmod>2020-11-12T22:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/ec2/</loc>
+    <lastmod>2020-11-12T22:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/iam/</loc>
+    <lastmod>2020-11-12T22:30:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://marcinchmiel.com/</loc>
-    <lastmod>2020-10-18T01:33:55+01:00</lastmod>
+    <lastmod>2020-11-12T22:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/performance/</loc>
+    <lastmod>2020-11-12T22:30:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://marcinchmiel.com/posts/</loc>
+    <lastmod>2020-11-12T22:30:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marcinchmiel.com/categories/ffmpeg/</loc>
     <lastmod>2020-10-18T01:33:55+01:00</lastmod>
   </url>
   
@@ -40,11 +65,6 @@
   <url>
     <loc>https://marcinchmiel.com/categories/x264/</loc>
     <lastmod>2020-10-18T01:33:55+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marcinchmiel.com/categories/aws/</loc>
-    <lastmod>2020-08-23T22:43:55+01:00</lastmod>
   </url>
   
   <url>
