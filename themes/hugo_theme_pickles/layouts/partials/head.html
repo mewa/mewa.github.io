@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  {{ with .Title | default .Site.Title }}
+  {{ with (printf "%s | %s" .Title $.Site.Params.TitleTagline) }}
   <title>{{ . }}</title>
   <meta property="og:title" content="{{ . }}" />
   <meta name="twitter:title" content="{{ . }}" />
