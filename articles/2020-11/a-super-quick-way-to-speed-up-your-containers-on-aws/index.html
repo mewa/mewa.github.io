@@ -115,7 +115,7 @@ It all started when I was setting up a whole new service from scratch. A pretty 
 <p>As it turned out, not in this case &ndash; the app returned a 200.</p>
 <h3 id="lets-break-it-down">Let&rsquo;s break it down</h3>
 <p>To visualize what&rsquo;s going on I used this <code>tshark</code> snippet:</p>
-<pre><code>tshark -i ens5 -Y http -T fields \
+<pre><code>$ tshark -i ens5 -Y http -T fields \
     -e frame.time_delta_displayed -e ip.ttl \
     -e http.request.method -e http.request.full_uri \
     -e http.response.code -e http.response_for.uri
@@ -139,13 +139,14 @@ It all started when I was setting up a whole new service from scratch. A pretty 
 <p>For a single AWS API call.</p>
 <h3 id="mitigation">Mitigation</h3>
 <p>Luckily, the remedy is pretty straightforward. You can change the TTL value returned by the IMDSv2 token endpoint easily using the following command:</p>
-<pre><code>aws ec2 modify-instance-metadata-options --instance-id &lt;instance-id&gt; \
+<pre><code>$ aws ec2 modify-instance-metadata-options --instance-id &lt;instance-id&gt; \
     --http-put-response-hop-limit 2
 </code></pre><p>Finally, with this small change the response times are back to normal.</p>
 <h3 id="final-thoughts">Final thoughts</h3>
 <p>Even though this change eliminates the latency issues we may have, let&rsquo;s not forget that the primary reason IMDSv2 was introducted was to <em>improve security</em>. As such, I deeply recommend disabling the IMDSv1 endpoint altogether.</p>
 <p>However, for this to work you must ensure nothing is relying on the presence of IMDSv1. This entails things like upgrading to the latest AWS SDKs. But it&rsquo;s not just about the SDKs. One commonly found example is the AWS CLI v1 &ndash; that still ships with many distros.</p>
 <p>But that&rsquo;s another story.</p>
+<p><em>Liked this post? Follow me on <a href="https://twitter.com/intent/user?screen_name=marcin_chm">Twitter</a> so you don&rsquo;t miss it when I post new stuff.</em></p>
 
   </section>
   <footer>
