@@ -47,7 +47,7 @@ As it turned out, not in this case -- the app returned a 200.
 To visualize what's going on I used this `tshark` snippet:
 
 ```
-tshark -i ens5 -Y http -T fields \
+$ tshark -i ens5 -Y http -T fields \
     -e frame.time_delta_displayed -e ip.ttl \
     -e http.request.method -e http.request.full_uri \
     -e http.response.code -e http.response_for.uri
@@ -86,7 +86,7 @@ For a single AWS API call.
 Luckily, the remedy is pretty straightforward. You can change the TTL value returned by the IMDSv2 token endpoint easily using the following command:
 
 ```
-aws ec2 modify-instance-metadata-options --instance-id <instance-id> \
+$ aws ec2 modify-instance-metadata-options --instance-id <instance-id> \
     --http-put-response-hop-limit 2
 ```
 
@@ -99,3 +99,5 @@ Even though this change eliminates the latency issues we may have, let's not for
 However, for this to work you must ensure nothing is relying on the presence of IMDSv1. This entails things like upgrading to the latest AWS SDKs. But it's not just about the SDKs. One commonly found example is the AWS CLI v1 -- that still ships with many distros.
 
 But that's another story.
+
+_Liked this post? Follow me on [Twitter](https://twitter.com/intent/user?screen_name=marcin_chm) so you don't miss it when I post new stuff._
